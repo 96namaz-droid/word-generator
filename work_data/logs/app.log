@@ -6666,3 +6666,13 @@
 2025-11-22 21:06:00 - WordGenerator - INFO - Запуск веб-сервера на порту 8000
 2025-11-22 21:19:09 - WordGenerator - INFO - Запуск веб-сервера...
 2025-11-22 21:28:23 - WordGenerator - INFO - Запуск веб-сервера на порту 8000
+2025-11-22 21:31:03 - WordGenerator - INFO - Запрошена генерация протокола типа: vertical
+2025-11-22 21:31:03 - WordGenerator - INFO - Начало генерации документа для заказчика: Общество с ограниченной ответственностью «РОСЭК
+2025-11-22 21:31:03 - WordGenerator - INFO - Проверка логотипа: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\assets\logo.png, существует: True
+2025-11-22 21:31:03 - WordGenerator - INFO - Логотип успешно добавлен: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\assets\logo.png
+2025-11-22 21:31:03 - WordGenerator - INFO - Данные соответствия лестниц: {1: {'compliant': True, 'violations': {}, 'name': 'л1'}}
+2025-11-22 21:31:03 - WordGenerator - INFO - Лестница №1: type=vertical, damages=False, paint_ok=True, compliant=True, has_paint_violation=False
+2025-11-22 21:31:03 - WordGenerator - INFO - Финальный текст вывода: Конструкции вертикальных пожарных лестниц в прочностные испытания выдержали, нагрузка выдерживалась в течение 2 минут. После испытания не имеет трещин, прогибов, изломов. Пригодны к эксплуатации. Соответствует ГОСТ Р 54253-2009 «Техника пожарная. Лестницы пожарные наружные стационарные. Ограждения к...
+2025-11-22 21:31:03 - WordGenerator - INFO - Документ успешно создан: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Отчёт_2025-11-22_21-31-03_л1.docx
+2025-11-22 21:31:03 - WordGenerator - INFO - Документ создан: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Отчёт_2025-11-22_21-31-03_л1.docx
+2025-11-22 21:31:03 - WordGenerator - INFO - Документ сгенерирован: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Отчёт_2025-11-22_21-31-03_л1.docx
