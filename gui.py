@@ -492,6 +492,7 @@ class MainApplication(tk.Tk):
         """Форма для ограждений кровли (скрыта по умолчанию)"""
         frame = ttk.LabelFrame(self.scrollable_main, text="Ограждение кровли", padding=10)
         entries = [
+            ("Наименование ограждений", "fence_name"),
             ("Длина участка (м)", "length"),
             ("Высота ограждения (м)", "height"),
             ("Количество точек крепления", "mount_points"),
@@ -506,12 +507,7 @@ class MainApplication(tk.Tk):
             entry.grid(row=idx, column=1, sticky='ew', pady=3, padx=5)
             self.roof_fields[key] = var
 
-        defaults = {
-            "mount_pitch": "1.2",
-        }
-        for key, value in defaults.items():
-            if key in self.roof_fields:
-                self.roof_fields[key].set(value)
+        # Убрано автозаполнение для mount_pitch
 
         self._remember_protocol_frame("roof", frame, fill='x', padx=10, pady=5)
     
@@ -1037,6 +1033,11 @@ class MainApplication(tk.Tk):
         elif protocol_type == 'roof':
             for key, var in self.roof_fields.items():
                 data[key] = var.get().strip()
+            # Добавляем данные визуального осмотра для ограждений кровли
+            data['damage_found'] = self.damage_found_var.get()
+            data['mount_violation_found'] = self.mount_violation_var.get()
+            data['weld_violation_found'] = self.weld_violation_var.get()
+            data['paint_compliant'] = self.paint_compliant_var.get()
         
         # Логирование собранных данных по соответствию
         ladders_compl = data.get('ladders_compliance', {})
@@ -1393,10 +1394,7 @@ class MainApplication(tk.Tk):
 
             # Поля ограждений кровли
             for key, var in self.roof_fields.items():
-                default = {
-                    "mount_pitch": "1.2",
-                }.get(key, '')
-                var.set(default)
+                var.set('')
             
             self._update_status("Форма очищена")
             app_logger.info("Форма очищена")

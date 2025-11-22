@@ -378,5 +378,31 @@ class DataValidator:
                 if not valid:
                     errors.append(msg)
 
+        # Валидация высоты от парапета (если заполнена)
+        parapet_height_str = str(data.get('parapet_height', '')).strip()
+        if parapet_height_str:
+            valid, msg = DataValidator.validate_number(
+                parapet_height_str,
+                'Высота ограждения от парапета',
+                min_value=0.1,
+                max_value=10.0
+            )
+            if not valid:
+                errors.append(msg)
+            else:
+                # Проверка, что высота от парапета >= высоте ограждения
+                try:
+                    parapet_height = float(parapet_height_str.replace(',', '.'))
+                    height_str = str(data.get('height', '')).strip()
+                    if height_str:
+                        height = float(height_str.replace(',', '.'))
+                        if parapet_height < height:
+                            errors.append(
+                                f"Высота ограждения от парапета ({parapet_height} м) не может быть меньше "
+                                f"высоты ограждения ({height} м)"
+                            )
+                except (ValueError, TypeError):
+                    pass  # Уже обработано выше
+
         return errors
 
