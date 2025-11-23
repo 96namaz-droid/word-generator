@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор протоколов</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Генератор Word-отчётов</h1>
+        
+        <form id="reportForm">
+            <!-- Выбор типа протокола -->
+            <div class="section">
+                <label for="protocolType">Тип протокола:</label>
+                <select id="protocolType" name="protocol_type" required>
+                    <option value="vertical">Вертикальная пожарная лестница</option>
+                    <option value="stair">Маршевая лестница</option>
+                    <option value="roof">Ограждение кровли</option>
+                </select>
+            </div>
+            
+            <!-- Основная информация -->
+            <div class="section">
+                <h2>Основная информация</h2>
+                <div class="form-group">
+                    <label for="date">Дата:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="customer">Заказчик:</label>
+                    <input type="text" id="customer" name="customer" list="customersList" required autocomplete="off">
+                    <datalist id="customersList"></datalist>
+                </div>
+                <div class="form-group">
+                    <label for="objectFullAddress">Адрес/наименование испытываемого объекта:</label>
+                    <textarea id="objectFullAddress" name="object_full_address" rows="3" required></textarea>
+                </div>
+            </div>
+            
+            <!-- Вертикальные лестницы -->
+            <div id="verticalSection" class="section">
+                <h2>Испытываемые лестницы</h2>
+                <div id="laddersContainer"></div>
+                <button type="button" onclick="addLadder()">+ Добавить лестницу</button>
+            </div>
+            
+            <!-- Маршевые лестницы -->
+            <div id="stairSection" class="section" style="display: none;">
+                <h2>Характеристики лестницы</h2>
+                <div class="form-group">
+                    <label for="ladderName">Название лестницы:</label>
+                    <input type="text" id="ladderName" name="ladder_name">
+                </div>
+                <div class="form-group">
+                    <label for="mountPointsStair">Количество точек крепления (шт.):</label>
+                    <input type="number" id="mountPointsStair" name="mount_points" min="1" required>
+                </div>
+                <h3>Марши и площадки</h3>
+                <div id="marchesContainer"></div>
+                <button type="button" onclick="addMarch()">+ Добавить марш/площадку</button>
+            </div>
+            
+            <!-- Ограждения кровли -->
+            <div id="roofSection" class="section" style="display: none;">
+                <h2>Ограждение кровли</h2>
+                <div class="form-group">
+                    <label for="fenceName">Наименование ограждений:</label>
+                    <input type="text" id="fenceName" name="fence_name">
+                </div>
+                <div class="form-group">
+                    <label for="length">Длина участка (м):</label>
+                    <input type="number" id="length" name="length" step="0.01" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="height">Высота ограждения (м):</label>
+                    <input type="number" id="height" name="height" step="0.01" min="0.6" max="3.0" required>
+                </div>
+                <div class="form-group">
+                    <label for="mountPointsRoof">Количество точек крепления:</label>
+                    <input type="number" id="mountPointsRoof" name="mount_points_roof" min="2" required>
+                </div>
+                <div class="form-group">
+                    <label for="mountPitch">Шаг крепления (м):</label>
+                    <input type="number" id="mountPitch" name="mount_pitch" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="parapetHeight">Высота ограждения от парапета (м):</label>
+                    <input type="number" id="parapetHeight" name="parapet_height" step="0.01" min="0.1">
+                </div>
+            </div>
+            
+            <!-- Условия проведения испытаний -->
+            <div class="section">
+                <h2>Условия проведения испытаний</h2>
+                <div class="form-group">
+                    <label for="testTime">Время проведения:</label>
+                    <select id="testTime" name="test_time">
+                        <option value="дневное время">Дневное время</option>
+                        <option value="ночное время">Ночное время</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="temperature">Температура воздуха (°C):</label>
+                    <input type="number" id="temperature" name="temperature" step="0.1">
+                    <button type="button" onclick="loadWeather()" style="margin-left: 10px; padding: 5px 10px; font-size: 14px;">🌤 Получить погоду</button>
+                </div>
+                <div class="form-group">
+                    <label for="windSpeed">Скорость ветра (м/с):</label>
+                    <input type="number" id="windSpeed" name="wind_speed" step="0.1" min="0">
+                </div>
+            </div>
+            
+            <!-- Визуальный осмотр (для маршевых и ограждений) -->
+            <div id="visualInspectionSection" class="section" style="display: none;">
+                <h2>Визуальный осмотр</h2>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="damageFound" name="damage_found">
+                        Внешние повреждения конструкций: Обнаружено
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="mountViolationFound" name="mount_violation_found">
+                        Следы нарушения крепления: Обнаружено
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="weldViolationFound" name="weld_violation_found">
+                        Нарушение сварных швов: Обнаружено
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="paintCompliant" name="paint_compliant" checked>
+                        Защитное покрытие требованиям ГОСТ 9.302 соответствует
+                    </label>
+                </div>
+            </div>
+            
+            <!-- Соответствие нормам (только для вертикальных) -->
+            <div id="complianceSection" class="section">
+                <h2>Соответствие нормам</h2>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="projectCompliant" name="project_compliant">
+                        Соответствует проекту
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="projectNumber">Номер проекта:</label>
+                    <input type="text" id="projectNumber" name="project_number" disabled>
+                </div>
+            </div>
+            
+            <div class="button-group">
+                <button type="submit">📄 Сгенерировать отчёт</button>
+                <button type="button" onclick="clearForm()">🗑 Очистить форму</button>
+            </div>
+            
+            <div id="errorMessage" class="error-message" style="display: none;"></div>
+            <div id="successMessage" class="success-message" style="display: none;"></div>
+        </form>
+    </div>
+    
+    <script src="/static/app.js"></script>
+</body>
+</html>
+

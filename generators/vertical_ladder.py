@@ -1023,26 +1023,20 @@ class VerticalLadderGenerator(BaseProtocolGenerator):
         self._format_paragraph(p)
     
     def _generate_filename(self, data):
-        """Генерирует имя файла"""
-        date_str = data.get('date', datetime.now().strftime('%Y-%m-%d'))
-        date_str = date_str.replace('.', '-').replace('/', '-')
-        
-        # Добавляем время для уникальности
-        time_str = datetime.now().strftime('%H-%M-%S')
-        
+        """Генерирует имя файла (использует базовый метод с транслитерацией)"""
         # Для имени файла используем название первой лестницы или объект
         ladders = data.get('ladders', [])
         if ladders and ladders[0].get('name'):
             base_name = ladders[0]['name']
         else:
             # Берём первые слова из объединённого поля
-            base_name = data.get('object_full_address', 'объект')
+            base_name = data.get('object_full_address', 'object')
         
-        # Очистка имени от недопустимых символов
-        object_name = "".join(c for c in base_name if c.isalnum() or c in (' ', '-', '_')).strip()
-        object_name = object_name[:50]  # Ограничение длины
-        
-        filename = f"Отчёт_{date_str}_{time_str}_{object_name}.docx"
+        # Временно заменяем object_full_address для использования базового метода
+        original_address = self.data.get('object_full_address')
+        self.data['object_full_address'] = base_name
+        filename = super()._generate_filename("Protocol_vertical")
+        self.data['object_full_address'] = original_address
         return filename
     
     def load_contract_data(self, customer_name):

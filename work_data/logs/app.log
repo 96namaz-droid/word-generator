@@ -6676,3 +6676,440 @@
 2025-11-22 21:31:03 - WordGenerator - INFO - Документ успешно создан: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Отчёт_2025-11-22_21-31-03_л1.docx
 2025-11-22 21:31:03 - WordGenerator - INFO - Документ создан: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Отчёт_2025-11-22_21-31-03_л1.docx
 2025-11-22 21:31:03 - WordGenerator - INFO - Документ сгенерирован: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Отчёт_2025-11-22_21-31-03_л1.docx
+2025-11-23 16:43:59 - WordGenerator - INFO - ==================================================
+2025-11-23 16:43:59 - WordGenerator - INFO - Запуск приложения Генератор Word-отчётов
+2025-11-23 16:43:59 - WordGenerator - INFO - ==================================================
+2025-11-23 16:44:00 - WordGenerator - INFO - Добавлен марш+площадка №1
+2025-11-23 16:44:00 - WordGenerator - INFO - Добавлена вертикальная лестница №1
+2025-11-23 16:44:00 - WordGenerator - INFO - Список заказчиков обновлён: 8 записей
+2025-11-23 16:44:00 - WordGenerator - INFO - Автоматическое обновление базы договоров...
+2025-11-23 16:44:00 - WordGenerator - INFO - Распарсен 137 РОСЭК.docx: заказчик: Общество с ограниченной ответственностью «РОСЭК, адрес/наименование: по адресу: Свердловская область, г. Екатеринбург, ул. Толмач...
+2025-11-23 16:44:01 - WordGenerator - INFO - Распарсен 127 ООО НСТ.docx: заказчик: Общество с ограниченной ответственностью «Новые Строительные Технологии, адрес/наименование: наименование « Жилой микрорайон. Корпус 4.2 с сетями водосна...
+2025-11-23 16:44:01 - WordGenerator - INFO - Распарсен 133  Хомидов    исп  ограждений лестн клеток.docx: заказчик: Индивидуальный предприниматель Хомидов Ахмаджон Максудович, адрес/наименование: «Многоэтажный многоквартирный жилой дом со встроенными нежил...
+2025-11-23 16:44:01 - WordGenerator - INFO - Распарсен 136 Системы и сети.docx: заказчик: Общество с ограниченной  ответственностью «СЕТИ И СИСТЕМЫ, адрес/наименование: «Многоэтажные жилые дома в квартале улиц Карла Либкнехта Орд...
+2025-11-23 16:44:01 - WordGenerator - INFO - Обработано файлов: 4, успешно извлечено: 4
+2025-11-23 16:44:01 - WordGenerator - INFO - База договоров сохранена
+2025-11-23 16:44:01 - WordGenerator - INFO - База обновлена, договоров: 4
+2025-11-23 16:44:01 - WordGenerator - INFO - Список заказчиков обновлён: 8 записей
+2025-11-23 16:44:01 - WordGenerator - INFO - База договоров автоматически обновлена: 4 договоров, 4 заказчиков
+2025-11-23 16:44:01 - WordGenerator - INFO - Приложение запущено
+2025-11-23 16:44:06 - WordGenerator - INFO - Выбран заказчик: Общество с ограниченной ответственностью «РОСЭК
+2025-11-23 16:44:06 - WordGenerator - INFO - Автозаполнение из 137 РОСЭК.docx: по адресу: Свердловская область, г. Екатеринбург, ...
+2025-11-23 16:44:08 - WordGenerator - INFO - Запрос текущей погоды для Екатеринбурга...
+2025-11-23 16:44:15 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out. (read timeout=5)
+2025-11-23 16:44:15 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 4.5 м/с
+2025-11-23 16:44:15 - WordGenerator - INFO - Погода успешно обновлена: 0.2°C, 4.5 м/с
+2025-11-23 16:44:48 - WordGenerator - INFO - ===== СБОР ДАННЫХ =====
+2025-11-23 16:44:48 - WordGenerator - INFO - Тип протокола: roof
+2025-11-23 16:44:48 - WordGenerator - INFO - Результат валидации: is_valid=True, errors=[]
+2025-11-23 16:44:48 - WordGenerator - INFO - Запрошена генерация протокола типа: roof
+2025-11-23 16:44:48 - WordGenerator - INFO - Документ создан: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Протокол_ограждения_23-11-2025_16-44-48_по адресу Свердловская область г Екатеринбург ул Т.docx
+2025-11-23 16:44:48 - WordGenerator - INFO - Запись добавлена в историю
+2025-11-23 16:44:48 - WordGenerator - INFO - Список заказчиков обновлён: 8 записей
+2025-11-23 16:45:57 - WordGenerator - INFO - ===== СБОР ДАННЫХ =====
+2025-11-23 16:45:57 - WordGenerator - INFO - Тип протокола: stair
+2025-11-23 16:45:57 - WordGenerator - INFO - Результат валидации: is_valid=True, errors=[]
+2025-11-23 16:45:57 - WordGenerator - INFO - Запрошена генерация протокола типа: stair
+2025-11-23 16:45:57 - WordGenerator - INFO - Документ создан: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Протокол_маршевые_23-11-2025_16-45-57_по адресу Свердловская область г Екатеринбург ул Т.docx
+2025-11-23 16:45:57 - WordGenerator - INFO - Запись добавлена в историю
+2025-11-23 16:45:57 - WordGenerator - INFO - Список заказчиков обновлён: 8 записей
+2025-11-23 16:46:10 - WordGenerator - INFO - ===== СБОР ДАННЫХ =====
+2025-11-23 16:46:10 - WordGenerator - INFO - Тип протокола: stair
+2025-11-23 16:46:10 - WordGenerator - INFO - Результат валидации: is_valid=True, errors=[]
+2025-11-23 16:46:10 - WordGenerator - INFO - Запрошена генерация протокола типа: stair
+2025-11-23 16:46:10 - WordGenerator - INFO - Документ создан: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Протокол_маршевые_23-11-2025_16-46-10_по адресу Свердловская область г Екатеринбург ул Т.docx
+2025-11-23 16:46:10 - WordGenerator - INFO - Запись добавлена в историю
+2025-11-23 16:46:10 - WordGenerator - INFO - Список заказчиков обновлён: 8 записей
+2025-11-23 16:46:43 - WordGenerator - INFO - Сохранены старые данные соответствия: {}
+2025-11-23 16:46:43 - WordGenerator - INFO - Обновление списка лестниц для соответствия: найдено 1 лестниц
+2025-11-23 16:46:43 - WordGenerator - INFO - Создан чекбокс соответствия для лестницы №1: кепц
+2025-11-23 16:46:43 - WordGenerator - INFO - ИТОГО создано чекбоксов: 1
+2025-11-23 16:46:43 - WordGenerator - INFO - Номера лестниц: [1]
+2025-11-23 16:46:43 - WordGenerator - INFO - ===== СБОР ДАННЫХ =====
+2025-11-23 16:46:43 - WordGenerator - INFO - Тип протокола: vertical
+2025-11-23 16:46:43 - WordGenerator - INFO - Количество записей в ladder_compliance_data: 1
+2025-11-23 16:46:43 - WordGenerator - INFO - Собранные данные соответствия: {1: {'compliant': True, 'violations': {'ladder_width': False, 'step_distance': False, 'wall_distance': False, 'ground_distance': False, 'platform_length': False, 'platform_width': False, 'fence_height': False, 'ladder_fence': False, 'mount_distance': False, 'paint_coating': False}, 'name': 'кепц'}}
+2025-11-23 16:46:43 - WordGenerator - INFO -   Лестница №1: compliant=True, violations={'ladder_width': False, 'step_distance': False, 'wall_distance': False, 'ground_distance': False, 'platform_length': False, 'platform_width': False, 'fence_height': False, 'ladder_fence': False, 'mount_distance': False, 'paint_coating': False}
+2025-11-23 16:46:43 - WordGenerator - INFO - Результат валидации: is_valid=True, errors=[]
+2025-11-23 16:46:43 - WordGenerator - INFO - Запрошена генерация протокола типа: vertical
+2025-11-23 16:46:43 - WordGenerator - INFO - Начало генерации документа для заказчика: Общество с ограниченной ответственностью «РОСЭК
+2025-11-23 16:46:43 - WordGenerator - INFO - Проверка логотипа: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\assets\logo.png, существует: True
+2025-11-23 16:46:43 - WordGenerator - INFO - Логотип успешно добавлен: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\assets\logo.png
+2025-11-23 16:46:43 - WordGenerator - INFO - Данные соответствия лестниц: {1: {'compliant': True, 'violations': {'ladder_width': False, 'step_distance': False, 'wall_distance': False, 'ground_distance': False, 'platform_length': False, 'platform_width': False, 'fence_height': False, 'ladder_fence': False, 'mount_distance': False, 'paint_coating': False}, 'name': 'кепц'}}
+2025-11-23 16:46:43 - WordGenerator - INFO - Лестница №1: type=vertical, damages=False, paint_ok=True, compliant=True, has_paint_violation=False
+2025-11-23 16:46:43 - WordGenerator - INFO - Финальный текст вывода: Конструкции вертикальных пожарных лестниц в прочностные испытания выдержали, нагрузка выдерживалась в течение 2 минут. После испытания не имеет трещин, прогибов, изломов. Пригодны к эксплуатации. Соответствует ГОСТ Р 54253-2009 «Техника пожарная. Лестницы пожарные наружные стационарные. Ограждения к...
+2025-11-23 16:46:43 - WordGenerator - INFO - Документ успешно создан: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Отчёт_23-11-2025_16-46-43_кепц.docx
+2025-11-23 16:46:43 - WordGenerator - INFO - Документ создан: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Отчёт_23-11-2025_16-46-43_кепц.docx
+2025-11-23 16:46:43 - WordGenerator - INFO - Запись добавлена в историю
+2025-11-23 16:46:43 - WordGenerator - INFO - Список заказчиков обновлён: 8 записей
+2025-11-23 16:46:58 - WordGenerator - INFO - Приложение завершено
+2025-11-23 16:47:28 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001C913998440>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 16:47:29 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 4.0 м/с
+2025-11-23 16:47:34 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001C91382BB10>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 16:47:34 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 4.0 м/с
+2025-11-23 16:47:39 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001C91382BED0>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 16:47:40 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 4.0 м/с
+2025-11-23 16:48:07 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001C91382B4D0>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 16:48:07 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 4.0 м/с
+2025-11-23 16:53:13 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out.
+2025-11-23 16:53:14 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 4.0 м/с
+2025-11-23 16:53:19 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out. (read timeout=5)
+2025-11-23 16:53:19 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 4.0 м/с
+2025-11-23 16:53:24 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out. (read timeout=5)
+2025-11-23 16:53:25 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 4.0 м/с
+2025-11-23 16:54:48 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001A0EC6DB610>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 16:54:48 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 4.0 м/с
+2025-11-23 16:54:53 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001A0EC6DBC50>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 16:54:54 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 4.0 м/с
+2025-11-23 17:08:02 - WordGenerator - INFO - ==================================================
+2025-11-23 17:08:02 - WordGenerator - INFO - Запуск приложения Генератор Word-отчётов
+2025-11-23 17:08:02 - WordGenerator - INFO - ==================================================
+2025-11-23 17:08:03 - WordGenerator - INFO - Добавлен марш+площадка №1
+2025-11-23 17:08:03 - WordGenerator - INFO - Добавлена вертикальная лестница №1
+2025-11-23 17:08:03 - WordGenerator - INFO - Список заказчиков обновлён: 8 записей
+2025-11-23 17:08:03 - WordGenerator - INFO - Автоматическое обновление базы договоров...
+2025-11-23 17:08:03 - WordGenerator - INFO - Распарсен 137 РОСЭК.docx: заказчик: Общество с ограниченной ответственностью «РОСЭК, адрес/наименование: по адресу: Свердловская область, г. Екатеринбург, ул. Толмач...
+2025-11-23 17:08:03 - WordGenerator - INFO - Распарсен 127 ООО НСТ.docx: заказчик: Общество с ограниченной ответственностью «Новые Строительные Технологии, адрес/наименование: наименование « Жилой микрорайон. Корпус 4.2 с сетями водосна...
+2025-11-23 17:08:03 - WordGenerator - INFO - Распарсен 133  Хомидов    исп  ограждений лестн клеток.docx: заказчик: Индивидуальный предприниматель Хомидов Ахмаджон Максудович, адрес/наименование: «Многоэтажный многоквартирный жилой дом со встроенными нежил...
+2025-11-23 17:08:03 - WordGenerator - INFO - Распарсен 136 Системы и сети.docx: заказчик: Общество с ограниченной  ответственностью «СЕТИ И СИСТЕМЫ, адрес/наименование: «Многоэтажные жилые дома в квартале улиц Карла Либкнехта Орд...
+2025-11-23 17:08:03 - WordGenerator - INFO - Обработано файлов: 4, успешно извлечено: 4
+2025-11-23 17:08:03 - WordGenerator - INFO - База договоров сохранена
+2025-11-23 17:08:03 - WordGenerator - INFO - База обновлена, договоров: 4
+2025-11-23 17:08:03 - WordGenerator - INFO - Список заказчиков обновлён: 8 записей
+2025-11-23 17:08:03 - WordGenerator - INFO - База договоров автоматически обновлена: 4 договоров, 4 заказчиков
+2025-11-23 17:08:04 - WordGenerator - INFO - Приложение запущено
+2025-11-23 17:08:07 - WordGenerator - INFO - Выбран заказчик: Общество с ограниченной  ответственностью «СЕТИ И СИСТЕМЫ
+2025-11-23 17:08:07 - WordGenerator - INFO - Автозаполнение из 136 Системы и сети.docx: «Многоэтажные жилые дома в квартале улиц Карла Либ...
+2025-11-23 17:08:09 - WordGenerator - INFO - Запрос текущей погоды для Екатеринбурга...
+2025-11-23 17:08:17 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out. (read timeout=5)
+2025-11-23 17:08:18 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 3.2 м/с
+2025-11-23 17:08:18 - WordGenerator - INFO - Погода успешно обновлена: 0.2°C, 3.2 м/с
+2025-11-23 17:08:35 - WordGenerator - INFO - ===== СБОР ДАННЫХ =====
+2025-11-23 17:08:35 - WordGenerator - INFO - Тип протокола: roof
+2025-11-23 17:08:35 - WordGenerator - INFO - [VALIDATOR] Начало валидации, тип протокола: roof
+2025-11-23 17:08:35 - WordGenerator - INFO - [VALIDATOR] Проверка даты: '23.11.2025'
+2025-11-23 17:08:35 - WordGenerator - INFO - [VALIDATOR] Проверка заказчика: 'Общество с ограниченной  ответственностью «СЕТИ И СИСТЕМЫ'
+2025-11-23 17:08:35 - WordGenerator - INFO - [VALIDATOR] Проверка адреса: длина=180
+2025-11-23 17:08:35 - WordGenerator - INFO - [VALIDATOR] Валидация протокола типа: roof
+2025-11-23 17:08:35 - WordGenerator - INFO - [VALIDATOR] Валидация ограждений кровли...
+2025-11-23 17:08:35 - WordGenerator - INFO - [VALIDATOR] Ошибок в протоколе: 0
+2025-11-23 17:08:35 - WordGenerator - INFO - [VALIDATOR] Проверка температуры: '0.2'
+2025-11-23 17:08:35 - WordGenerator - INFO - [VALIDATOR] Проверка скорости ветра: '3.2'
+2025-11-23 17:08:35 - WordGenerator - INFO - [VALIDATOR] Итог валидации: valid=True, ошибок=0
+2025-11-23 17:08:35 - WordGenerator - INFO - Результат валидации: is_valid=True, errors=[]
+2025-11-23 17:08:35 - WordGenerator - INFO - === DOCUMENT_GENERATOR.create_document ===
+2025-11-23 17:08:35 - WordGenerator - INFO - Тип протокола: roof
+2025-11-23 17:08:35 - WordGenerator - INFO - Данные получены: keys=['protocol_type', 'date', 'customer', 'object_full_address', 'test_time', 'temperature', 'wind_speed', 'project_compliant', 'project_number', 'ladders', 'ladders_compliance', 'fence_name', 'length', 'height', 'mount_points', 'mount_pitch', 'parapet_height', 'damage_found', 'mount_violation_found', 'weld_violation_found', 'paint_compliant']
+2025-11-23 17:08:35 - WordGenerator - INFO - Создание генератора через Factory...
+2025-11-23 17:08:35 - WordGenerator - INFO - Генератор создан: RoofFenceGenerator
+2025-11-23 17:08:35 - WordGenerator - INFO - Вызов validate() генератора...
+2025-11-23 17:08:35 - WordGenerator - INFO - Валидация генератора пройдена ✓
+2025-11-23 17:08:35 - WordGenerator - INFO - Вызов generate_doc()...
+2025-11-23 17:08:35 - WordGenerator - INFO - === ДОКУМЕНТ УСПЕШНО СОЗДАН ===
+2025-11-23 17:08:35 - WordGenerator - INFO - Путь к файлу: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Протокол_ограждения_23-11-2025_17-08-35_Многоэтажные жилые дома в квартале улиц Карла Либк.docx
+2025-11-23 17:08:35 - WordGenerator - INFO - Файл существует, размер: 185863 байт
+2025-11-23 17:08:35 - WordGenerator - INFO - Запись добавлена в историю
+2025-11-23 17:08:35 - WordGenerator - INFO - Список заказчиков обновлён: 8 записей
+2025-11-23 17:08:44 - WordGenerator - INFO - Приложение завершено
+2025-11-23 17:09:06 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000020B8F8B02F0>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 17:09:06 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 3.2 м/с
+2025-11-23 17:09:14 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out.
+2025-11-23 17:09:15 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 3.2 м/с
+2025-11-23 17:09:20 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000020B8F8C4550>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 17:09:21 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 3.2 м/с
+2025-11-23 17:11:04 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out.
+2025-11-23 17:11:04 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 3.2 м/с
+2025-11-23 17:11:09 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000020B8F8C47D0>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 17:11:10 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 3.2 м/с
+2025-11-23 17:11:18 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out. (read timeout=5)
+2025-11-23 17:11:19 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 3.2 м/с
+2025-11-23 17:12:08 - WordGenerator - INFO - === ВАЛИДАЦИЯ ДАННЫХ ===
+2025-11-23 17:12:08 - WordGenerator - INFO - Тип протокола: vertical
+2025-11-23 17:12:08 - WordGenerator - INFO - Валидация вертикальных лестниц: 1 лестниц
+2025-11-23 17:12:08 - WordGenerator - INFO - Вызов DataValidator.validate_all_data...
+2025-11-23 17:12:08 - WordGenerator - INFO - [VALIDATOR] Начало валидации, тип протокола: vertical
+2025-11-23 17:12:08 - WordGenerator - INFO - [VALIDATOR] Проверка даты: '23.11.2025'
+2025-11-23 17:12:08 - WordGenerator - INFO - [VALIDATOR] Проверка заказчика: 'ООО Тестовая Компания'
+2025-11-23 17:12:08 - WordGenerator - INFO - [VALIDATOR] Проверка адреса: длина=29
+2025-11-23 17:12:08 - WordGenerator - INFO - [VALIDATOR] Валидация протокола типа: vertical
+2025-11-23 17:12:08 - WordGenerator - INFO - [VALIDATOR] Валидация вертикальных лестниц...
+2025-11-23 17:12:08 - WordGenerator - INFO - [VALIDATOR] Ошибок в протоколе: 0
+2025-11-23 17:12:08 - WordGenerator - INFO - [VALIDATOR] Проверка температуры: '20'
+2025-11-23 17:12:08 - WordGenerator - INFO - [VALIDATOR] Проверка скорости ветра: '5'
+2025-11-23 17:12:08 - WordGenerator - INFO - [VALIDATOR] Итог валидации: valid=True, ошибок=0
+2025-11-23 17:12:08 - WordGenerator - INFO - Результат валидации: valid=True, errors=0
+2025-11-23 17:12:10 - WordGenerator - INFO - === ЗАПРОС НА ГЕНЕРАЦИЮ ===
+2025-11-23 17:12:10 - WordGenerator - INFO - Тип протокола: vertical
+2025-11-23 17:12:10 - WordGenerator - INFO - Дата: 23.11.2025
+2025-11-23 17:12:10 - WordGenerator - INFO - Заказчик: ООО Тестовая Компания
+2025-11-23 17:12:10 - WordGenerator - INFO - Объект: г. Москва, ул. Тестовая, д. 1
+2025-11-23 17:12:10 - WordGenerator - INFO - Обработка вертикальных лестниц...
+2025-11-23 17:12:10 - WordGenerator - INFO - Получено лестниц: 1
+2025-11-23 17:12:10 - WordGenerator - INFO -   Лестница 1: name=Лестница вертикальная №1, height=10, width=0.6
+2025-11-23 17:12:10 - WordGenerator - INFO - Вертикальные лестницы обработаны: 1 лестниц
+2025-11-23 17:12:10 - WordGenerator - INFO - === НАЧАЛО ВАЛИДАЦИИ ===
+2025-11-23 17:12:10 - WordGenerator - INFO - [VALIDATOR] Начало валидации, тип протокола: vertical
+2025-11-23 17:12:10 - WordGenerator - INFO - [VALIDATOR] Проверка даты: '23.11.2025'
+2025-11-23 17:12:10 - WordGenerator - INFO - [VALIDATOR] Проверка заказчика: 'ООО Тестовая Компания'
+2025-11-23 17:12:10 - WordGenerator - INFO - [VALIDATOR] Проверка адреса: длина=29
+2025-11-23 17:12:10 - WordGenerator - INFO - [VALIDATOR] Валидация протокола типа: vertical
+2025-11-23 17:12:10 - WordGenerator - INFO - [VALIDATOR] Валидация вертикальных лестниц...
+2025-11-23 17:12:10 - WordGenerator - INFO - [VALIDATOR] Ошибок в протоколе: 0
+2025-11-23 17:12:10 - WordGenerator - INFO - [VALIDATOR] Проверка температуры: '20'
+2025-11-23 17:12:10 - WordGenerator - INFO - [VALIDATOR] Проверка скорости ветра: '5'
+2025-11-23 17:12:10 - WordGenerator - INFO - [VALIDATOR] Итог валидации: valid=True, ошибок=0
+2025-11-23 17:12:10 - WordGenerator - INFO - Валидация пройдена успешно ✓
+2025-11-23 17:12:10 - WordGenerator - INFO - === НАЧАЛО ГЕНЕРАЦИИ ДОКУМЕНТА ===
+2025-11-23 17:12:10 - WordGenerator - INFO - Создание DocumentGenerator...
+2025-11-23 17:12:10 - WordGenerator - INFO - Генератор создан, вызов create_document...
+2025-11-23 17:12:10 - WordGenerator - INFO - Передаваемые данные в create_document: protocol_type=vertical
+2025-11-23 17:12:10 - WordGenerator - INFO - === DOCUMENT_GENERATOR.create_document ===
+2025-11-23 17:12:10 - WordGenerator - INFO - Тип протокола: vertical
+2025-11-23 17:12:10 - WordGenerator - INFO - Данные получены: keys=['protocol_type', 'date', 'customer', 'object_full_address', 'test_time', 'temperature', 'wind_speed', 'ladders', 'ladders_compliance', 'ladder_name', 'mount_points', 'marches', 'fence_name', 'length', 'height', 'mount_points_roof', 'mount_pitch', 'parapet_height', 'damage_found', 'mount_violation_found', 'weld_violation_found', 'paint_compliant', 'project_compliant', 'project_number']
+2025-11-23 17:12:10 - WordGenerator - INFO - Создание генератора через Factory...
+2025-11-23 17:12:10 - WordGenerator - INFO - Генератор создан: VerticalLadderGenerator
+2025-11-23 17:12:10 - WordGenerator - INFO - Вызов validate() генератора...
+2025-11-23 17:12:10 - WordGenerator - INFO - [VALIDATOR] Начало валидации, тип протокола: vertical
+2025-11-23 17:12:10 - WordGenerator - INFO - [VALIDATOR] Проверка даты: '23.11.2025'
+2025-11-23 17:12:10 - WordGenerator - INFO - [VALIDATOR] Проверка заказчика: 'ООО Тестовая Компания'
+2025-11-23 17:12:10 - WordGenerator - INFO - [VALIDATOR] Проверка адреса: длина=29
+2025-11-23 17:12:10 - WordGenerator - INFO - [VALIDATOR] Валидация протокола типа: vertical
+2025-11-23 17:12:10 - WordGenerator - INFO - [VALIDATOR] Валидация вертикальных лестниц...
+2025-11-23 17:12:10 - WordGenerator - INFO - [VALIDATOR] Ошибок в протоколе: 0
+2025-11-23 17:12:10 - WordGenerator - INFO - [VALIDATOR] Проверка температуры: '20'
+2025-11-23 17:12:10 - WordGenerator - INFO - [VALIDATOR] Проверка скорости ветра: '5'
+2025-11-23 17:12:10 - WordGenerator - INFO - [VALIDATOR] Итог валидации: valid=True, ошибок=0
+2025-11-23 17:12:10 - WordGenerator - INFO - Валидация генератора пройдена ✓
+2025-11-23 17:12:10 - WordGenerator - INFO - Вызов generate_doc()...
+2025-11-23 17:12:10 - WordGenerator - INFO - Начало генерации документа для заказчика: ООО Тестовая Компания
+2025-11-23 17:12:10 - WordGenerator - INFO - Проверка логотипа: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\assets\logo.png, существует: True
+2025-11-23 17:12:10 - WordGenerator - INFO - Логотип успешно добавлен: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\assets\logo.png
+2025-11-23 17:12:10 - WordGenerator - INFO - Данные соответствия лестниц: {'1': {'compliant': True, 'violations': []}}
+2025-11-23 17:12:10 - WordGenerator - INFO - Лестница №1: type=vertical, damages=False, paint_ok=True, compliant=True, has_paint_violation=False
+2025-11-23 17:12:10 - WordGenerator - INFO - Финальный текст вывода: Конструкции вертикальных пожарных лестниц в прочностные испытания выдержали, нагрузка выдерживалась в течение 2 минут. После испытания не имеет трещин, прогибов, изломов. Пригодны к эксплуатации. Соответствует ГОСТ Р 54253-2009 «Техника пожарная. Лестницы пожарные наружные стационарные. Ограждения к...
+2025-11-23 17:12:10 - WordGenerator - INFO - Документ успешно создан: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Отчёт_23-11-2025_17-12-10_Лестница вертикальная 1.docx
+2025-11-23 17:12:10 - WordGenerator - INFO - === ДОКУМЕНТ УСПЕШНО СОЗДАН ===
+2025-11-23 17:12:10 - WordGenerator - INFO - Путь к файлу: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Отчёт_23-11-2025_17-12-10_Лестница вертикальная 1.docx
+2025-11-23 17:12:10 - WordGenerator - INFO - Файл существует, размер: 185890 байт
+2025-11-23 17:12:10 - WordGenerator - INFO - ✓ create_document вернул путь: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Отчёт_23-11-2025_17-12-10_Лестница вертикальная 1.docx
+2025-11-23 17:12:10 - WordGenerator - INFO - Документ успешно создан: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Отчёт_23-11-2025_17-12-10_Лестница вертикальная 1.docx
+2025-11-23 17:12:10 - WordGenerator - INFO - Размер файла: 185890 байт
+2025-11-23 17:12:10 - WordGenerator - INFO - Имя файла для скачивания: Отчёт_23-11-2025_17-12-10_Лестница вертикальная 1.docx
+2025-11-23 17:12:10 - WordGenerator - ERROR - Ошибка валидации генератора: 'latin-1' codec can't encode characters in position 22-26: ordinal not in range(256)
+2025-11-23 17:12:37 - WordGenerator - INFO - === ВАЛИДАЦИЯ ДАННЫХ ===
+2025-11-23 17:12:37 - WordGenerator - INFO - Тип протокола: vertical
+2025-11-23 17:12:37 - WordGenerator - INFO - Валидация вертикальных лестниц: 1 лестниц
+2025-11-23 17:12:37 - WordGenerator - INFO - Вызов DataValidator.validate_all_data...
+2025-11-23 17:12:37 - WordGenerator - INFO - [VALIDATOR] Начало валидации, тип протокола: vertical
+2025-11-23 17:12:37 - WordGenerator - INFO - [VALIDATOR] Проверка даты: '23.11.2025'
+2025-11-23 17:12:37 - WordGenerator - INFO - [VALIDATOR] Проверка заказчика: 'ООО Тестовая Компания'
+2025-11-23 17:12:37 - WordGenerator - INFO - [VALIDATOR] Проверка адреса: длина=29
+2025-11-23 17:12:37 - WordGenerator - INFO - [VALIDATOR] Валидация протокола типа: vertical
+2025-11-23 17:12:37 - WordGenerator - INFO - [VALIDATOR] Валидация вертикальных лестниц...
+2025-11-23 17:12:37 - WordGenerator - INFO - [VALIDATOR] Ошибок в протоколе: 0
+2025-11-23 17:12:37 - WordGenerator - INFO - [VALIDATOR] Проверка температуры: '20'
+2025-11-23 17:12:37 - WordGenerator - INFO - [VALIDATOR] Проверка скорости ветра: '5'
+2025-11-23 17:12:37 - WordGenerator - INFO - [VALIDATOR] Итог валидации: valid=True, ошибок=0
+2025-11-23 17:12:37 - WordGenerator - INFO - Результат валидации: valid=True, errors=0
+2025-11-23 17:12:39 - WordGenerator - INFO - === ЗАПРОС НА ГЕНЕРАЦИЮ ===
+2025-11-23 17:12:39 - WordGenerator - INFO - Тип протокола: vertical
+2025-11-23 17:12:39 - WordGenerator - INFO - Дата: 23.11.2025
+2025-11-23 17:12:39 - WordGenerator - INFO - Заказчик: ООО Тестовая Компания
+2025-11-23 17:12:39 - WordGenerator - INFO - Объект: г. Москва, ул. Тестовая, д. 1
+2025-11-23 17:12:39 - WordGenerator - INFO - Обработка вертикальных лестниц...
+2025-11-23 17:12:39 - WordGenerator - INFO - Получено лестниц: 1
+2025-11-23 17:12:39 - WordGenerator - INFO -   Лестница 1: name=Лестница вертикальная №1, height=10, width=0.6
+2025-11-23 17:12:39 - WordGenerator - INFO - Вертикальные лестницы обработаны: 1 лестниц
+2025-11-23 17:12:39 - WordGenerator - INFO - === НАЧАЛО ВАЛИДАЦИИ ===
+2025-11-23 17:12:39 - WordGenerator - INFO - [VALIDATOR] Начало валидации, тип протокола: vertical
+2025-11-23 17:12:39 - WordGenerator - INFO - [VALIDATOR] Проверка даты: '23.11.2025'
+2025-11-23 17:12:39 - WordGenerator - INFO - [VALIDATOR] Проверка заказчика: 'ООО Тестовая Компания'
+2025-11-23 17:12:39 - WordGenerator - INFO - [VALIDATOR] Проверка адреса: длина=29
+2025-11-23 17:12:39 - WordGenerator - INFO - [VALIDATOR] Валидация протокола типа: vertical
+2025-11-23 17:12:39 - WordGenerator - INFO - [VALIDATOR] Валидация вертикальных лестниц...
+2025-11-23 17:12:39 - WordGenerator - INFO - [VALIDATOR] Ошибок в протоколе: 0
+2025-11-23 17:12:39 - WordGenerator - INFO - [VALIDATOR] Проверка температуры: '20'
+2025-11-23 17:12:39 - WordGenerator - INFO - [VALIDATOR] Проверка скорости ветра: '5'
+2025-11-23 17:12:39 - WordGenerator - INFO - [VALIDATOR] Итог валидации: valid=True, ошибок=0
+2025-11-23 17:12:39 - WordGenerator - INFO - Валидация пройдена успешно ✓
+2025-11-23 17:12:39 - WordGenerator - INFO - === НАЧАЛО ГЕНЕРАЦИИ ДОКУМЕНТА ===
+2025-11-23 17:12:39 - WordGenerator - INFO - Создание DocumentGenerator...
+2025-11-23 17:12:39 - WordGenerator - INFO - Генератор создан, вызов create_document...
+2025-11-23 17:12:39 - WordGenerator - INFO - Передаваемые данные в create_document: protocol_type=vertical
+2025-11-23 17:12:39 - WordGenerator - INFO - === DOCUMENT_GENERATOR.create_document ===
+2025-11-23 17:12:39 - WordGenerator - INFO - Тип протокола: vertical
+2025-11-23 17:12:39 - WordGenerator - INFO - Данные получены: keys=['protocol_type', 'date', 'customer', 'object_full_address', 'test_time', 'temperature', 'wind_speed', 'ladders', 'ladders_compliance', 'ladder_name', 'mount_points', 'marches', 'fence_name', 'length', 'height', 'mount_points_roof', 'mount_pitch', 'parapet_height', 'damage_found', 'mount_violation_found', 'weld_violation_found', 'paint_compliant', 'project_compliant', 'project_number']
+2025-11-23 17:12:39 - WordGenerator - INFO - Создание генератора через Factory...
+2025-11-23 17:12:39 - WordGenerator - INFO - Генератор создан: VerticalLadderGenerator
+2025-11-23 17:12:39 - WordGenerator - INFO - Вызов validate() генератора...
+2025-11-23 17:12:39 - WordGenerator - INFO - [VALIDATOR] Начало валидации, тип протокола: vertical
+2025-11-23 17:12:39 - WordGenerator - INFO - [VALIDATOR] Проверка даты: '23.11.2025'
+2025-11-23 17:12:39 - WordGenerator - INFO - [VALIDATOR] Проверка заказчика: 'ООО Тестовая Компания'
+2025-11-23 17:12:39 - WordGenerator - INFO - [VALIDATOR] Проверка адреса: длина=29
+2025-11-23 17:12:39 - WordGenerator - INFO - [VALIDATOR] Валидация протокола типа: vertical
+2025-11-23 17:12:39 - WordGenerator - INFO - [VALIDATOR] Валидация вертикальных лестниц...
+2025-11-23 17:12:39 - WordGenerator - INFO - [VALIDATOR] Ошибок в протоколе: 0
+2025-11-23 17:12:39 - WordGenerator - INFO - [VALIDATOR] Проверка температуры: '20'
+2025-11-23 17:12:39 - WordGenerator - INFO - [VALIDATOR] Проверка скорости ветра: '5'
+2025-11-23 17:12:39 - WordGenerator - INFO - [VALIDATOR] Итог валидации: valid=True, ошибок=0
+2025-11-23 17:12:39 - WordGenerator - INFO - Валидация генератора пройдена ✓
+2025-11-23 17:12:39 - WordGenerator - INFO - Вызов generate_doc()...
+2025-11-23 17:12:39 - WordGenerator - INFO - Начало генерации документа для заказчика: ООО Тестовая Компания
+2025-11-23 17:12:39 - WordGenerator - INFO - Проверка логотипа: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\assets\logo.png, существует: True
+2025-11-23 17:12:39 - WordGenerator - INFO - Логотип успешно добавлен: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\assets\logo.png
+2025-11-23 17:12:39 - WordGenerator - INFO - Данные соответствия лестниц: {'1': {'compliant': True, 'violations': []}}
+2025-11-23 17:12:39 - WordGenerator - INFO - Лестница №1: type=vertical, damages=False, paint_ok=True, compliant=True, has_paint_violation=False
+2025-11-23 17:12:39 - WordGenerator - INFO - Финальный текст вывода: Конструкции вертикальных пожарных лестниц в прочностные испытания выдержали, нагрузка выдерживалась в течение 2 минут. После испытания не имеет трещин, прогибов, изломов. Пригодны к эксплуатации. Соответствует ГОСТ Р 54253-2009 «Техника пожарная. Лестницы пожарные наружные стационарные. Ограждения к...
+2025-11-23 17:12:39 - WordGenerator - INFO - Документ успешно создан: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Отчёт_23-11-2025_17-12-39_Лестница вертикальная 1.docx
+2025-11-23 17:12:39 - WordGenerator - INFO - === ДОКУМЕНТ УСПЕШНО СОЗДАН ===
+2025-11-23 17:12:39 - WordGenerator - INFO - Путь к файлу: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Отчёт_23-11-2025_17-12-39_Лестница вертикальная 1.docx
+2025-11-23 17:12:39 - WordGenerator - INFO - Файл существует, размер: 185890 байт
+2025-11-23 17:12:39 - WordGenerator - INFO - ✓ create_document вернул путь: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Отчёт_23-11-2025_17-12-39_Лестница вертикальная 1.docx
+2025-11-23 17:12:39 - WordGenerator - INFO - Документ успешно создан: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Отчёт_23-11-2025_17-12-39_Лестница вертикальная 1.docx
+2025-11-23 17:12:39 - WordGenerator - INFO - Размер файла: 185890 байт
+2025-11-23 17:12:39 - WordGenerator - INFO - Имя файла для скачивания: Отчёт_23-11-2025_17-12-39_Лестница вертикальная 1.docx
+2025-11-23 17:12:39 - WordGenerator - ERROR - Ошибка валидации генератора: 'latin-1' codec can't encode characters in position 22-26: ordinal not in range(256)
+2025-11-23 17:13:39 - WordGenerator - INFO - === ВАЛИДАЦИЯ ДАННЫХ ===
+2025-11-23 17:13:39 - WordGenerator - INFO - Тип протокола: vertical
+2025-11-23 17:13:39 - WordGenerator - INFO - Валидация вертикальных лестниц: 1 лестниц
+2025-11-23 17:13:39 - WordGenerator - INFO - Вызов DataValidator.validate_all_data...
+2025-11-23 17:13:39 - WordGenerator - INFO - [VALIDATOR] Начало валидации, тип протокола: vertical
+2025-11-23 17:13:39 - WordGenerator - INFO - [VALIDATOR] Проверка даты: '23.11.2025'
+2025-11-23 17:13:39 - WordGenerator - INFO - [VALIDATOR] Проверка заказчика: 'ООО Тестовая Компания'
+2025-11-23 17:13:39 - WordGenerator - INFO - [VALIDATOR] Проверка адреса: длина=29
+2025-11-23 17:13:39 - WordGenerator - INFO - [VALIDATOR] Валидация протокола типа: vertical
+2025-11-23 17:13:39 - WordGenerator - INFO - [VALIDATOR] Валидация вертикальных лестниц...
+2025-11-23 17:13:39 - WordGenerator - INFO - [VALIDATOR] Ошибок в протоколе: 0
+2025-11-23 17:13:39 - WordGenerator - INFO - [VALIDATOR] Проверка температуры: '20'
+2025-11-23 17:13:39 - WordGenerator - INFO - [VALIDATOR] Проверка скорости ветра: '5'
+2025-11-23 17:13:39 - WordGenerator - INFO - [VALIDATOR] Итог валидации: valid=True, ошибок=0
+2025-11-23 17:13:39 - WordGenerator - INFO - Результат валидации: valid=True, errors=0
+2025-11-23 17:13:42 - WordGenerator - INFO - === ЗАПРОС НА ГЕНЕРАЦИЮ ===
+2025-11-23 17:13:42 - WordGenerator - INFO - Тип протокола: vertical
+2025-11-23 17:13:42 - WordGenerator - INFO - Дата: 23.11.2025
+2025-11-23 17:13:42 - WordGenerator - INFO - Заказчик: ООО Тестовая Компания
+2025-11-23 17:13:42 - WordGenerator - INFO - Объект: г. Москва, ул. Тестовая, д. 1
+2025-11-23 17:13:42 - WordGenerator - INFO - Обработка вертикальных лестниц...
+2025-11-23 17:13:42 - WordGenerator - INFO - Получено лестниц: 1
+2025-11-23 17:13:42 - WordGenerator - INFO -   Лестница 1: name=Лестница вертикальная №1, height=10, width=0.6
+2025-11-23 17:13:42 - WordGenerator - INFO - Вертикальные лестницы обработаны: 1 лестниц
+2025-11-23 17:13:42 - WordGenerator - INFO - === НАЧАЛО ВАЛИДАЦИИ ===
+2025-11-23 17:13:42 - WordGenerator - INFO - [VALIDATOR] Начало валидации, тип протокола: vertical
+2025-11-23 17:13:42 - WordGenerator - INFO - [VALIDATOR] Проверка даты: '23.11.2025'
+2025-11-23 17:13:42 - WordGenerator - INFO - [VALIDATOR] Проверка заказчика: 'ООО Тестовая Компания'
+2025-11-23 17:13:42 - WordGenerator - INFO - [VALIDATOR] Проверка адреса: длина=29
+2025-11-23 17:13:42 - WordGenerator - INFO - [VALIDATOR] Валидация протокола типа: vertical
+2025-11-23 17:13:42 - WordGenerator - INFO - [VALIDATOR] Валидация вертикальных лестниц...
+2025-11-23 17:13:42 - WordGenerator - INFO - [VALIDATOR] Ошибок в протоколе: 0
+2025-11-23 17:13:42 - WordGenerator - INFO - [VALIDATOR] Проверка температуры: '20'
+2025-11-23 17:13:42 - WordGenerator - INFO - [VALIDATOR] Проверка скорости ветра: '5'
+2025-11-23 17:13:42 - WordGenerator - INFO - [VALIDATOR] Итог валидации: valid=True, ошибок=0
+2025-11-23 17:13:42 - WordGenerator - INFO - Валидация пройдена успешно ✓
+2025-11-23 17:13:42 - WordGenerator - INFO - === НАЧАЛО ГЕНЕРАЦИИ ДОКУМЕНТА ===
+2025-11-23 17:13:42 - WordGenerator - INFO - Создание DocumentGenerator...
+2025-11-23 17:13:42 - WordGenerator - INFO - Генератор создан, вызов create_document...
+2025-11-23 17:13:42 - WordGenerator - INFO - Передаваемые данные в create_document: protocol_type=vertical
+2025-11-23 17:13:42 - WordGenerator - INFO - === DOCUMENT_GENERATOR.create_document ===
+2025-11-23 17:13:42 - WordGenerator - INFO - Тип протокола: vertical
+2025-11-23 17:13:42 - WordGenerator - INFO - Данные получены: keys=['protocol_type', 'date', 'customer', 'object_full_address', 'test_time', 'temperature', 'wind_speed', 'ladders', 'ladders_compliance', 'ladder_name', 'mount_points', 'marches', 'fence_name', 'length', 'height', 'mount_points_roof', 'mount_pitch', 'parapet_height', 'damage_found', 'mount_violation_found', 'weld_violation_found', 'paint_compliant', 'project_compliant', 'project_number']
+2025-11-23 17:13:42 - WordGenerator - INFO - Создание генератора через Factory...
+2025-11-23 17:13:42 - WordGenerator - INFO - Генератор создан: VerticalLadderGenerator
+2025-11-23 17:13:42 - WordGenerator - INFO - Вызов validate() генератора...
+2025-11-23 17:13:42 - WordGenerator - INFO - [VALIDATOR] Начало валидации, тип протокола: vertical
+2025-11-23 17:13:42 - WordGenerator - INFO - [VALIDATOR] Проверка даты: '23.11.2025'
+2025-11-23 17:13:42 - WordGenerator - INFO - [VALIDATOR] Проверка заказчика: 'ООО Тестовая Компания'
+2025-11-23 17:13:42 - WordGenerator - INFO - [VALIDATOR] Проверка адреса: длина=29
+2025-11-23 17:13:42 - WordGenerator - INFO - [VALIDATOR] Валидация протокола типа: vertical
+2025-11-23 17:13:42 - WordGenerator - INFO - [VALIDATOR] Валидация вертикальных лестниц...
+2025-11-23 17:13:42 - WordGenerator - INFO - [VALIDATOR] Ошибок в протоколе: 0
+2025-11-23 17:13:42 - WordGenerator - INFO - [VALIDATOR] Проверка температуры: '20'
+2025-11-23 17:13:42 - WordGenerator - INFO - [VALIDATOR] Проверка скорости ветра: '5'
+2025-11-23 17:13:42 - WordGenerator - INFO - [VALIDATOR] Итог валидации: valid=True, ошибок=0
+2025-11-23 17:13:42 - WordGenerator - INFO - Валидация генератора пройдена ✓
+2025-11-23 17:13:42 - WordGenerator - INFO - Вызов generate_doc()...
+2025-11-23 17:13:42 - WordGenerator - INFO - Начало генерации документа для заказчика: ООО Тестовая Компания
+2025-11-23 17:13:42 - WordGenerator - INFO - Проверка логотипа: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\assets\logo.png, существует: True
+2025-11-23 17:13:42 - WordGenerator - INFO - Логотип успешно добавлен: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\assets\logo.png
+2025-11-23 17:13:42 - WordGenerator - INFO - Данные соответствия лестниц: {'1': {'compliant': True, 'violations': []}}
+2025-11-23 17:13:42 - WordGenerator - INFO - Лестница №1: type=vertical, damages=False, paint_ok=True, compliant=True, has_paint_violation=False
+2025-11-23 17:13:42 - WordGenerator - INFO - Финальный текст вывода: Конструкции вертикальных пожарных лестниц в прочностные испытания выдержали, нагрузка выдерживалась в течение 2 минут. После испытания не имеет трещин, прогибов, изломов. Пригодны к эксплуатации. Соответствует ГОСТ Р 54253-2009 «Техника пожарная. Лестницы пожарные наружные стационарные. Ограждения к...
+2025-11-23 17:13:42 - WordGenerator - INFO - Документ успешно создан: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Protocol_vertical_23-11-2025_17-13-42_Lestnitsa vertikalnaya 1.docx
+2025-11-23 17:13:42 - WordGenerator - INFO - === ДОКУМЕНТ УСПЕШНО СОЗДАН ===
+2025-11-23 17:13:42 - WordGenerator - INFO - Путь к файлу: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Protocol_vertical_23-11-2025_17-13-42_Lestnitsa vertikalnaya 1.docx
+2025-11-23 17:13:42 - WordGenerator - INFO - Файл существует, размер: 185890 байт
+2025-11-23 17:13:42 - WordGenerator - INFO - ✓ create_document вернул путь: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Protocol_vertical_23-11-2025_17-13-42_Lestnitsa vertikalnaya 1.docx
+2025-11-23 17:13:42 - WordGenerator - INFO - Документ успешно создан: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Protocol_vertical_23-11-2025_17-13-42_Lestnitsa vertikalnaya 1.docx
+2025-11-23 17:13:42 - WordGenerator - INFO - Размер файла: 185890 байт
+2025-11-23 17:13:42 - WordGenerator - INFO - Имя файла для скачивания: Protocol_vertical_23-11-2025_17-13-42_Lestnitsa vertikalnaya 1.docx
+2025-11-23 17:16:48 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027CFFABC440>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 17:16:48 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 3.6 м/с
+2025-11-23 17:16:53 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027CFF99B9D0>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 17:16:59 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 3.6 м/с
+2025-11-23 17:17:16 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out.
+2025-11-23 17:17:17 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 3.6 м/с
+2025-11-23 17:17:46 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out. (read timeout=5)
+2025-11-23 17:17:47 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 3.6 м/с
+2025-11-23 17:17:56 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out.
+2025-11-23 17:17:56 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 3.6 м/с
+2025-11-23 17:19:01 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out. (read timeout=5)
+2025-11-23 17:19:02 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 3.6 м/с
+2025-11-23 17:19:07 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027CFF99BB10>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 17:19:07 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 3.6 м/с
+2025-11-23 17:19:13 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out. (read timeout=5)
+2025-11-23 17:19:14 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 3.6 м/с
+2025-11-23 17:19:22 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out.
+2025-11-23 17:19:23 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 3.6 м/с
+2025-11-23 17:20:05 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027CFF999950>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 17:20:05 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 3.6 м/с
+2025-11-23 17:20:16 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out.
+2025-11-23 17:20:17 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 3.6 м/с
+2025-11-23 17:20:59 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027CFF99B250>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 17:21:00 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 3.6 м/с
+2025-11-23 17:28:02 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out. (read timeout=5)
+2025-11-23 17:28:03 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 3.6 м/с
+2025-11-23 17:28:08 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027CFF99A850>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 17:28:08 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 3.6 м/с
+2025-11-23 17:28:13 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027CFF999E50>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 17:28:14 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 3.6 м/с
+2025-11-23 17:31:43 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027CFF99BED0>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 17:31:44 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 4.3 м/с
+2025-11-23 17:31:52 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out. (read timeout=5)
+2025-11-23 17:31:52 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 4.3 м/с
+2025-11-23 17:38:23 - WordGenerator - INFO - ==================================================
+2025-11-23 17:38:23 - WordGenerator - INFO - Запуск приложения Генератор Word-отчётов
+2025-11-23 17:38:23 - WordGenerator - INFO - ==================================================
+2025-11-23 17:38:23 - WordGenerator - INFO - Добавлен марш+площадка №1
+2025-11-23 17:38:23 - WordGenerator - INFO - Добавлена вертикальная лестница №1
+2025-11-23 17:38:23 - WordGenerator - INFO - Список заказчиков обновлён: 8 записей
+2025-11-23 17:38:23 - WordGenerator - INFO - Автоматическое обновление базы договоров...
+2025-11-23 17:38:23 - WordGenerator - INFO - Распарсен 137 РОСЭК.docx: заказчик: Общество с ограниченной ответственностью «РОСЭК, адрес/наименование: по адресу: Свердловская область, г. Екатеринбург, ул. Толмач...
+2025-11-23 17:38:24 - WordGenerator - INFO - Распарсен 127 ООО НСТ.docx: заказчик: Общество с ограниченной ответственностью «Новые Строительные Технологии, адрес/наименование: наименование « Жилой микрорайон. Корпус 4.2 с сетями водосна...
+2025-11-23 17:38:24 - WordGenerator - INFO - Распарсен 133  Хомидов    исп  ограждений лестн клеток.docx: заказчик: Индивидуальный предприниматель Хомидов Ахмаджон Максудович, адрес/наименование: «Многоэтажный многоквартирный жилой дом со встроенными нежил...
+2025-11-23 17:38:24 - WordGenerator - INFO - Распарсен 136 Системы и сети.docx: заказчик: Общество с ограниченной  ответственностью «СЕТИ И СИСТЕМЫ, адрес/наименование: «Многоэтажные жилые дома в квартале улиц Карла Либкнехта Орд...
+2025-11-23 17:38:24 - WordGenerator - INFO - Обработано файлов: 4, успешно извлечено: 4
+2025-11-23 17:38:24 - WordGenerator - INFO - База договоров сохранена
+2025-11-23 17:38:24 - WordGenerator - INFO - База обновлена, договоров: 4
+2025-11-23 17:38:24 - WordGenerator - INFO - Список заказчиков обновлён: 8 записей
+2025-11-23 17:38:24 - WordGenerator - INFO - База договоров автоматически обновлена: 4 договоров, 4 заказчиков
+2025-11-23 17:38:24 - WordGenerator - INFO - Приложение запущено
+2025-11-23 17:38:25 - WordGenerator - INFO - Приложение завершено
+2025-11-23 17:38:38 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027CFF99A710>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 17:38:38 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 4.3 м/с
+2025-11-23 17:38:43 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027CFF999D10>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 17:38:44 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 4.3 м/с
+2025-11-23 17:38:49 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027CFF99AD50>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 17:38:49 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 4.3 м/с
+2025-11-23 17:40:27 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out. (read timeout=5)
+2025-11-23 17:40:27 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 4.3 м/с
+2025-11-23 17:41:37 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027CFF999F90>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 17:41:37 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 4.3 м/с
+2025-11-23 17:42:23 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out. (read timeout=5)
+2025-11-23 17:42:23 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 4.3 м/с
+2025-11-23 18:01:09 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027CFF99A5D0>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 18:01:10 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 5.4 м/с
+2025-11-23 18:01:18 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out. (read timeout=5)
+2025-11-23 18:01:18 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 5.4 м/с
+2025-11-23 18:01:23 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027CFF99BB10>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 18:01:24 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 5.4 м/с
+2025-11-23 18:01:54 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027CFF9982D0>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 18:01:55 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 5.4 м/с

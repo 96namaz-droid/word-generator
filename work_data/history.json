@@ -1,251 +1,5 @@
 [
   {
-    "timestamp": "2025-11-14T07:38:16.556726",
-    "data": {
-      "date": "14.11.2025",
-      "customer": "Общество с ограниченной ответственностью «Новые Строительные Технологии",
-      "object_full_address": "наименование « Жилой микрорайон. Корпус 4.2 с сетями водоснабжения, водоотведения, тепловой сетью, с сетью электроснабжения и ливневой канализации. Четвертый этап строительства» расположенный по адресу г. Екатеринбург, пр. Космонавтов,11.",
-      "ladders": [
-        {
-          "number": 1,
-          "name": "Ограждение кровли",
-          "ladder_type": "roof_fence",
-          "damage_found": false,
-          "mount_violation_found": false,
-          "weld_violation_found": false,
-          "paint_compliant": true,
-          "length": "1",
-          "fence_height": "1",
-          "fence_height_from_roof": "1"
-        }
-      ],
-      "test_time": "дневное время",
-      "temperature": "",
-      "wind_speed": "",
-      "ladders_compliance": {
-        "1": {
-          "compliant": true,
-          "violations": {
-            "ladder_width": false,
-            "step_distance": false,
-            "wall_distance": false,
-            "ground_distance": false,
-            "platform_length": false,
-            "platform_width": false,
-            "fence_height": false,
-            "ladder_fence": false,
-            "mount_distance": false,
-            "paint_coating": false
-          },
-          "name": "Ограждение кровли"
-        }
-      },
-      "project_compliant": false,
-      "project_number": ""
-    }
-  },
-  {
-    "timestamp": "2025-11-14T08:12:46.527760",
-    "data": {
-      "date": "14.11.2025",
-      "customer": "Общество с ограниченной ответственностью «Новые Строительные Технологии",
-      "object_full_address": "наименование « Жилой микрорайон. Корпус 4.2 с сетями водоснабжения, водоотведения, тепловой сетью, с сетью электроснабжения и ливневой канализации. Четвертый этап строительства» расположенный по адресу г. Екатеринбург, пр. Космонавтов,11.",
-      "ladders": [
-        {
-          "number": 1,
-          "name": "Ограждение кровли",
-          "ladder_type": "roof_fence",
-          "damage_found": false,
-          "mount_violation_found": false,
-          "weld_violation_found": false,
-          "paint_compliant": true,
-          "length": "1",
-          "fence_height": "1",
-          "fence_height_from_roof": "1"
-        }
-      ],
-      "test_time": "дневное время",
-      "temperature": "",
-      "wind_speed": "",
-      "ladders_compliance": {
-        "1": {
-          "compliant": true,
-          "violations": {
-            "ladder_width": false,
-            "step_distance": false,
-            "wall_distance": false,
-            "ground_distance": false,
-            "platform_length": false,
-            "platform_width": false,
-            "fence_height": false,
-            "ladder_fence": false,
-            "mount_distance": false,
-            "paint_coating": false
-          },
-          "name": "Ограждение кровли"
-        }
-      },
-      "project_compliant": false,
-      "project_number": ""
-    }
-  },
-  {
-    "timestamp": "2025-11-14T14:53:01.408620",
-    "data": {
-      "date": "14.11.2025",
-      "customer": "Общество с ограниченной  ответственностью «СЕТИ И СИСТЕМЫ",
-      "object_full_address": "«Многоэтажные жилые дома в квартале улиц Карла Либкнехта Орджоникидзе - Трактовая - пер. Стрелочников в г. Сысерть Свердловской области. I этап строительства. Жилые дома № 1.1, 1.2",
-      "ladders": [
-        {
-          "number": 1,
-          "name": "ваупук",
-          "ladder_type": "vertical",
-          "damage_found": false,
-          "mount_violation_found": false,
-          "weld_violation_found": false,
-          "paint_compliant": true,
-          "height": "1",
-          "width": "1",
-          "steps_count": "1",
-          "mount_points": "1",
-          "platform_length": "",
-          "platform_width": "",
-          "fence_height": "",
-          "wall_distance": "",
-          "ground_distance": "",
-          "step_distance": "1"
-        }
-      ],
-      "test_time": "дневное время",
-      "temperature": "",
-      "wind_speed": "",
-      "ladders_compliance": {
-        "1": {
-          "compliant": true,
-          "violations": {
-            "ladder_width": false,
-            "step_distance": false,
-            "wall_distance": false,
-            "ground_distance": false,
-            "platform_length": false,
-            "platform_width": false,
-            "fence_height": false,
-            "ladder_fence": false,
-            "mount_distance": false,
-            "paint_coating": false
-          },
-          "name": "ваупук"
-        }
-      },
-      "project_compliant": false,
-      "project_number": ""
-    }
-  },
-  {
-    "timestamp": "2025-11-14T15:34:25.871476",
-    "data": {
-      "date": "14.11.2025",
-      "customer": "Общество с ограниченной ответственностью «РОСЭК",
-      "object_full_address": "по адресу: Свердловская область, г. Екатеринбург, ул. Толмачева, 6.",
-      "ladders": [
-        {
-          "number": 1,
-          "name": "ыафф",
-          "ladder_type": "vertical",
-          "damage_found": false,
-          "mount_violation_found": false,
-          "weld_violation_found": false,
-          "paint_compliant": true,
-          "height": "1",
-          "width": "1",
-          "steps_count": "1",
-          "mount_points": "1",
-          "platform_length": "",
-          "platform_width": "",
-          "fence_height": "",
-          "wall_distance": "",
-          "ground_distance": "",
-          "step_distance": "1"
-        }
-      ],
-      "test_time": "дневное время",
-      "temperature": "2.8",
-      "wind_speed": "7.5",
-      "ladders_compliance": {
-        "1": {
-          "compliant": false,
-          "violations": {
-            "ladder_width": false,
-            "step_distance": false,
-            "wall_distance": false,
-            "ground_distance": false,
-            "platform_length": true,
-            "platform_width": false,
-            "fence_height": false,
-            "ladder_fence": false,
-            "mount_distance": false,
-            "paint_coating": false
-          },
-          "name": "ыафф"
-        }
-      },
-      "project_compliant": false,
-      "project_number": ""
-    }
-  },
-  {
-    "timestamp": "2025-11-14T15:34:52.259438",
-    "data": {
-      "date": "14.11.2025",
-      "customer": "Общество с ограниченной ответственностью «РОСЭК",
-      "object_full_address": "по адресу: Свердловская область, г. Екатеринбург, ул. Толмачева, 6.",
-      "ladders": [
-        {
-          "number": 1,
-          "name": "ыафф",
-          "ladder_type": "vertical",
-          "damage_found": false,
-          "mount_violation_found": false,
-          "weld_violation_found": true,
-          "paint_compliant": true,
-          "height": "1",
-          "width": "1",
-          "steps_count": "1",
-          "mount_points": "1",
-          "platform_length": "",
-          "platform_width": "",
-          "fence_height": "",
-          "wall_distance": "",
-          "ground_distance": "",
-          "step_distance": "1"
-        }
-      ],
-      "test_time": "дневное время",
-      "temperature": "2.8",
-      "wind_speed": "7.5",
-      "ladders_compliance": {
-        "1": {
-          "compliant": false,
-          "violations": {
-            "ladder_width": false,
-            "step_distance": false,
-            "wall_distance": false,
-            "ground_distance": false,
-            "platform_length": true,
-            "platform_width": false,
-            "fence_height": false,
-            "ladder_fence": false,
-            "mount_distance": false,
-            "paint_coating": false
-          },
-          "name": "ыафф"
-        }
-      },
-      "project_compliant": false,
-      "project_number": ""
-    }
-  },
-  {
     "timestamp": "2025-11-14T15:46:56.869030",
     "data": {
       "date": "14.11.2025",
@@ -3954,6 +3708,189 @@
       "damage_found": true,
       "mount_violation_found": true,
       "weld_violation_found": true,
+      "paint_compliant": true
+    }
+  },
+  {
+    "timestamp": "2025-11-23T16:44:48.316007",
+    "data": {
+      "protocol_type": "roof",
+      "date": "23.11.2025",
+      "customer": "Общество с ограниченной ответственностью «РОСЭК",
+      "object_full_address": "по адресу: Свердловская область, г. Екатеринбург, ул. Толмачева, 6.",
+      "test_time": "дневное время",
+      "temperature": "0.2",
+      "wind_speed": "4.5",
+      "project_compliant": false,
+      "project_number": "",
+      "ladders": [],
+      "ladders_compliance": {},
+      "fence_name": "птачпч",
+      "length": "2",
+      "height": "2",
+      "mount_points": "2",
+      "mount_pitch": "2",
+      "parapet_height": "2",
+      "damage_found": false,
+      "mount_violation_found": true,
+      "weld_violation_found": false,
+      "paint_compliant": true
+    }
+  },
+  {
+    "timestamp": "2025-11-23T16:45:57.356185",
+    "data": {
+      "protocol_type": "stair",
+      "date": "23.11.2025",
+      "customer": "Общество с ограниченной ответственностью «РОСЭК",
+      "object_full_address": "по адресу: Свердловская область, г. Екатеринбург, ул. Толмачева, 6.",
+      "test_time": "дневное время",
+      "temperature": "0.2",
+      "wind_speed": "4.5",
+      "project_compliant": false,
+      "project_number": "",
+      "ladders": [],
+      "ladders_compliance": {},
+      "ladder_name": "кенунец",
+      "mount_points": "3",
+      "marches": [
+        {
+          "number": 1,
+          "has_march": true,
+          "has_platform": true,
+          "march_width": "2",
+          "march_length": "3",
+          "step_width": "0.3",
+          "step_distance": "0.2",
+          "steps_count": "2",
+          "march_fence_height": "2",
+          "platform_length": "2",
+          "platform_width": "2",
+          "platform_fence_height": "2",
+          "platform_ground_distance": "2"
+        }
+      ],
+      "damage_found": false,
+      "mount_violation_found": false,
+      "weld_violation_found": false,
+      "paint_compliant": true
+    }
+  },
+  {
+    "timestamp": "2025-11-23T16:46:10.552977",
+    "data": {
+      "protocol_type": "stair",
+      "date": "23.11.2025",
+      "customer": "Общество с ограниченной ответственностью «РОСЭК",
+      "object_full_address": "по адресу: Свердловская область, г. Екатеринбург, ул. Толмачева, 6.",
+      "test_time": "дневное время",
+      "temperature": "0.2",
+      "wind_speed": "4.5",
+      "project_compliant": false,
+      "project_number": "",
+      "ladders": [],
+      "ladders_compliance": {},
+      "ladder_name": "кенунец",
+      "mount_points": "3",
+      "marches": [
+        {
+          "number": 1,
+          "has_march": true,
+          "has_platform": true,
+          "march_width": "2",
+          "march_length": "3",
+          "step_width": "0.3",
+          "step_distance": "0.2",
+          "steps_count": "2",
+          "march_fence_height": "2",
+          "platform_length": "2",
+          "platform_width": "2",
+          "platform_fence_height": "2",
+          "platform_ground_distance": "2"
+        }
+      ],
+      "damage_found": false,
+      "mount_violation_found": false,
+      "weld_violation_found": true,
+      "paint_compliant": true
+    }
+  },
+  {
+    "timestamp": "2025-11-23T16:46:43.588129",
+    "data": {
+      "protocol_type": "vertical",
+      "date": "23.11.2025",
+      "customer": "Общество с ограниченной ответственностью «РОСЭК",
+      "object_full_address": "по адресу: Свердловская область, г. Екатеринбург, ул. Толмачева, 6.",
+      "test_time": "дневное время",
+      "temperature": "0.2",
+      "wind_speed": "4.5",
+      "project_compliant": false,
+      "project_number": "",
+      "ladders": [
+        {
+          "number": 1,
+          "name": "кепц",
+          "ladder_type": "vertical",
+          "damage_found": false,
+          "mount_violation_found": false,
+          "weld_violation_found": false,
+          "paint_compliant": true,
+          "height": "5",
+          "width": "5",
+          "steps_count": "5",
+          "mount_points": "5",
+          "platform_length": "5",
+          "platform_width": "5",
+          "fence_height": "5",
+          "wall_distance": "5",
+          "ground_distance": "5",
+          "step_distance": "5"
+        }
+      ],
+      "ladders_compliance": {
+        "1": {
+          "compliant": true,
+          "violations": {
+            "ladder_width": false,
+            "step_distance": false,
+            "wall_distance": false,
+            "ground_distance": false,
+            "platform_length": false,
+            "platform_width": false,
+            "fence_height": false,
+            "ladder_fence": false,
+            "mount_distance": false,
+            "paint_coating": false
+          },
+          "name": "кепц"
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2025-11-23T17:08:35.534107",
+    "data": {
+      "protocol_type": "roof",
+      "date": "23.11.2025",
+      "customer": "Общество с ограниченной  ответственностью «СЕТИ И СИСТЕМЫ",
+      "object_full_address": "«Многоэтажные жилые дома в квартале улиц Карла Либкнехта Орджоникидзе - Трактовая - пер. Стрелочников в г. Сысерть Свердловской области. I этап строительства. Жилые дома № 1.1, 1.2",
+      "test_time": "дневное время",
+      "temperature": "0.2",
+      "wind_speed": "3.2",
+      "project_compliant": false,
+      "project_number": "",
+      "ladders": [],
+      "ladders_compliance": {},
+      "fence_name": "раврвнв",
+      "length": "2",
+      "height": "2",
+      "mount_points": "2",
+      "mount_pitch": "2",
+      "parapet_height": "2",
+      "damage_found": false,
+      "mount_violation_found": false,
+      "weld_violation_found": false,
       "paint_compliant": true
     }
   }

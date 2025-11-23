@@ -156,7 +156,7 @@ class StairLadderGenerator(BaseProtocolGenerator):
         self._add_conclusion()
         self._add_signatures()
 
-        filename = self._generate_filename("Протокол_маршевые")
+        filename = self._generate_filename("Protocol_stair")
         output = self._resolve_output_path(output_path, filename)
         self.document.save(str(output))
         return str(output)

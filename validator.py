@@ -137,61 +137,96 @@ class DataValidator:
         Returns:
             tuple: (bool, list) - (валидность, список ошибок)
         """
+        from logger import app_logger
         errors = []
         
+        app_logger.info(f"[VALIDATOR] Начало валидации, тип протокола: {data.get('protocol_type', 'не указан')}")
+        
         # Валидация даты
-        valid, msg = DataValidator.validate_date(data.get('date', ''))
+        date_val = data.get('date', '')
+        app_logger.info(f"[VALIDATOR] Проверка даты: '{date_val}'")
+        valid, msg = DataValidator.validate_date(date_val)
         if not valid:
             errors.append(msg)
+            app_logger.warning(f"[VALIDATOR] Ошибка даты: {msg}")
         
         # Валидация заказчика
-        valid, msg = DataValidator.validate_customer(data.get('customer', ''))
+        customer_val = data.get('customer', '')
+        app_logger.info(f"[VALIDATOR] Проверка заказчика: '{customer_val}'")
+        valid, msg = DataValidator.validate_customer(customer_val)
         if not valid:
             errors.append(msg)
+            app_logger.warning(f"[VALIDATOR] Ошибка заказчика: {msg}")
         
         # Валидация адреса/наименования объекта (объединённое поле)
+        address_val = data.get('object_full_address', '')
+        app_logger.info(f"[VALIDATOR] Проверка адреса: длина={len(address_val)}")
         valid, msg = DataValidator.validate_text_field(
-            data.get('object_full_address', ''),
+            address_val,
             'Адрес/наименование испытываемого объекта',
             min_length=5
         )
         if not valid:
             errors.append(msg)
+            app_logger.warning(f"[VALIDATOR] Ошибка адреса: {msg}")
         
         protocol_type = data.get('protocol_type', 'vertical')
+        app_logger.info(f"[VALIDATOR] Валидация протокола типа: {protocol_type}")
 
         if protocol_type == 'vertical':
-            errors.extend(DataValidator._validate_vertical_protocol(data))
+            app_logger.info(f"[VALIDATOR] Валидация вертикальных лестниц...")
+            protocol_errors = DataValidator._validate_vertical_protocol(data)
+            errors.extend(protocol_errors)
+            app_logger.info(f"[VALIDATOR] Ошибок в протоколе: {len(protocol_errors)}")
         elif protocol_type == 'stair':
-            errors.extend(DataValidator._validate_stair_protocol(data))
+            app_logger.info(f"[VALIDATOR] Валидация маршевых лестниц...")
+            protocol_errors = DataValidator._validate_stair_protocol(data)
+            errors.extend(protocol_errors)
+            app_logger.info(f"[VALIDATOR] Ошибок в протоколе: {len(protocol_errors)}")
         elif protocol_type == 'roof':
-            errors.extend(DataValidator._validate_roof_protocol(data))
+            app_logger.info(f"[VALIDATOR] Валидация ограждений кровли...")
+            protocol_errors = DataValidator._validate_roof_protocol(data)
+            errors.extend(protocol_errors)
+            app_logger.info(f"[VALIDATOR] Ошибок в протоколе: {len(protocol_errors)}")
         else:
-            errors.append("Неизвестный тип протокола. Выберите корректное значение.")
+            error_msg = "Неизвестный тип протокола. Выберите корректное значение."
+            errors.append(error_msg)
+            app_logger.error(f"[VALIDATOR] {error_msg}")
         
         # Валидация температуры
         if data.get('temperature'):
+            temp_val = data.get('temperature', '')
+            app_logger.info(f"[VALIDATOR] Проверка температуры: '{temp_val}'")
             valid, msg = DataValidator.validate_number(
-                data.get('temperature', ''),
+                temp_val,
                 'Температура воздуха',
                 min_value=-50,
                 max_value=50
             )
             if not valid:
                 errors.append(msg)
+                app_logger.warning(f"[VALIDATOR] Ошибка температуры: {msg}")
         
         # Валидация скорости ветра
         if data.get('wind_speed'):
+            wind_val = data.get('wind_speed', '')
+            app_logger.info(f"[VALIDATOR] Проверка скорости ветра: '{wind_val}'")
             valid, msg = DataValidator.validate_number(
-                data.get('wind_speed', ''),
+                wind_val,
                 'Скорость ветра',
                 min_value=0,
                 max_value=100
             )
             if not valid:
                 errors.append(msg)
+                app_logger.warning(f"[VALIDATOR] Ошибка скорости ветра: {msg}")
         
-        return len(errors) == 0, errors
+        result_valid = len(errors) == 0
+        app_logger.info(f"[VALIDATOR] Итог валидации: valid={result_valid}, ошибок={len(errors)}")
+        if errors:
+            app_logger.warning(f"[VALIDATOR] Список ошибок: {errors}")
+        
+        return result_valid, errors
 
     # --- Протокольные валидаторы ----------------------------------------------
 

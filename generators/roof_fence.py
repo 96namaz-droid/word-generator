@@ -50,7 +50,7 @@ class RoofFenceGenerator(BaseProtocolGenerator):
         self._add_conclusion()
         self._add_signatures()
 
-        filename = self._generate_filename("Протокол_ограждения")
+        filename = self._generate_filename("Protocol_roof")
         output = self._resolve_output_path(output_path, filename)
         self.document.save(str(output))
         return str(output)
