@@ -5,7 +5,7 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import HTMLResponse, FileResponse, JSONResponse
 from urllib.parse import quote
 from fastapi.staticfiles import StaticFiles
-from fastapi.templating import Jinja2Templates
+from starlette.templating import Jinja2Templates
 from fastapi.exceptions import RequestValidationError
 from pydantic import BaseModel, Field, ValidationError
 from typing import List, Optional, Dict, Any
@@ -23,6 +23,18 @@ from weather_service import WeatherService
 import config
 
 app = FastAPI(title="Генератор протоколов")
+
+# Глобальный обработчик ошибок
+@app.exception_handler(Exception)
+async def global_exception_handler(request: Request, exc: Exception):
+    """Глобальная обработка всех необработанных исключений"""
+    import traceback
+    error_msg = f"Необработанная ошибка: {str(exc)}\n{traceback.format_exc()}"
+    app_logger.error(error_msg)
+    return JSONResponse(
+        status_code=500,
+        content={"detail": str(exc), "error": "Внутренняя ошибка сервера"}
+    )
 
 # Обработчик ошибок валидации Pydantic
 @app.exception_handler(RequestValidationError)
@@ -151,7 +163,16 @@ class ReportData(BaseModel):
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
     """Главная страница"""
-    return templates.TemplateResponse("index.html", {"request": request})
+    try:
+        app_logger.info("Запрос главной страницы")
+        response = templates.TemplateResponse("index.html", {"request": request})
+        app_logger.info("Главная страница успешно отдана")
+        return response
+    except Exception as e:
+        app_logger.error(f"Ошибка при отдаче главной страницы: {e}")
+        import traceback
+        app_logger.error(traceback.format_exc())
+        raise
 
 
 @app.get("/api/customers")
