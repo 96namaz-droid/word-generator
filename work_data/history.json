@@ -1,161 +1,5 @@
 [
   {
-    "timestamp": "2025-11-14T15:46:56.869030",
-    "data": {
-      "date": "14.11.2025",
-      "customer": "Общество с ограниченной ответственностью «Новые Строительные Технологии",
-      "object_full_address": "наименование « Жилой микрорайон. Корпус 4.2 с сетями водоснабжения, водоотведения, тепловой сетью, с сетью электроснабжения и ливневой канализации. Четвертый этап строительства» расположенный по адресу г. Екатеринбург, пр. Космонавтов,11.",
-      "ladders": [
-        {
-          "number": 1,
-          "name": "ывфафыв",
-          "ladder_type": "vertical",
-          "damage_found": true,
-          "mount_violation_found": false,
-          "weld_violation_found": false,
-          "paint_compliant": true,
-          "height": "1",
-          "width": "1",
-          "steps_count": "1",
-          "mount_points": "1",
-          "platform_length": "",
-          "platform_width": "",
-          "fence_height": "",
-          "wall_distance": "",
-          "ground_distance": "",
-          "step_distance": "1"
-        }
-      ],
-      "test_time": "дневное время",
-      "temperature": "2.8",
-      "wind_speed": "8.0",
-      "ladders_compliance": {
-        "1": {
-          "compliant": true,
-          "violations": {
-            "ladder_width": false,
-            "step_distance": false,
-            "wall_distance": false,
-            "ground_distance": false,
-            "platform_length": false,
-            "platform_width": false,
-            "fence_height": false,
-            "ladder_fence": false,
-            "mount_distance": false,
-            "paint_coating": false
-          },
-          "name": "ывфафыв"
-        }
-      },
-      "project_compliant": false,
-      "project_number": ""
-    }
-  },
-  {
-    "timestamp": "2025-11-14T15:58:47.926006",
-    "data": {
-      "date": "14.11.2025",
-      "customer": "Общество с ограниченной  ответственностью «СЕТИ И СИСТЕМЫ",
-      "object_full_address": "«Многоэтажные жилые дома в квартале улиц Карла Либкнехта Орджоникидзе - Трактовая - пер. Стрелочников в г. Сысерть Свердловской области. I этап строительства. Жилые дома № 1.1, 1.2",
-      "ladders": [
-        {
-          "number": 1,
-          "name": "ЛМ1",
-          "ladder_type": "vertical",
-          "damage_found": false,
-          "mount_violation_found": false,
-          "weld_violation_found": false,
-          "paint_compliant": true,
-          "height": "1",
-          "width": "1",
-          "steps_count": "1",
-          "mount_points": "1",
-          "platform_length": "",
-          "platform_width": "",
-          "fence_height": "",
-          "wall_distance": "",
-          "ground_distance": "",
-          "step_distance": "1"
-        }
-      ],
-      "test_time": "дневное время",
-      "temperature": "2.8",
-      "wind_speed": "8.0",
-      "ladders_compliance": {
-        "1": {
-          "compliant": false,
-          "violations": {
-            "ladder_width": false,
-            "step_distance": false,
-            "wall_distance": false,
-            "ground_distance": false,
-            "platform_length": false,
-            "platform_width": false,
-            "fence_height": true,
-            "ladder_fence": false,
-            "mount_distance": false,
-            "paint_coating": false
-          },
-          "name": "ЛМ1"
-        }
-      },
-      "project_compliant": false,
-      "project_number": ""
-    }
-  },
-  {
-    "timestamp": "2025-11-14T16:03:01.816821",
-    "data": {
-      "date": "14.11.2025",
-      "customer": "Общество с ограниченной ответственностью «РОСЭК",
-      "object_full_address": "по адресу: Свердловская область, г. Екатеринбург, ул. Толмачева, 6.",
-      "ladders": [
-        {
-          "number": 1,
-          "name": "л1",
-          "ladder_type": "vertical",
-          "damage_found": false,
-          "mount_violation_found": false,
-          "weld_violation_found": false,
-          "paint_compliant": true,
-          "height": "2",
-          "width": "2",
-          "steps_count": "2",
-          "mount_points": "2",
-          "platform_length": "",
-          "platform_width": "",
-          "fence_height": "",
-          "wall_distance": "",
-          "ground_distance": "",
-          "step_distance": "2"
-        }
-      ],
-      "test_time": "дневное время",
-      "temperature": "",
-      "wind_speed": "",
-      "ladders_compliance": {
-        "1": {
-          "compliant": true,
-          "violations": {
-            "ladder_width": false,
-            "step_distance": false,
-            "wall_distance": false,
-            "ground_distance": false,
-            "platform_length": false,
-            "platform_width": false,
-            "fence_height": false,
-            "ladder_fence": false,
-            "mount_distance": false,
-            "paint_coating": false
-          },
-          "name": "л1"
-        }
-      },
-      "project_compliant": false,
-      "project_number": ""
-    }
-  },
-  {
     "timestamp": "2025-11-14T16:50:04.045189",
     "data": {
       "date": "14.11.2025",
@@ -3892,6 +3736,84 @@
       "mount_violation_found": false,
       "weld_violation_found": false,
       "paint_compliant": true
+    }
+  },
+  {
+    "timestamp": "2025-11-24T18:16:53.796303",
+    "data": {
+      "protocol_type": "roof",
+      "date": "24.11.2025",
+      "customer": "Общество с ограниченной ответственностью «Новые Строительные Технологии",
+      "object_full_address": "наименование « Жилой микрорайон. Корпус 4.2 с сетями водоснабжения, водоотведения, тепловой сетью, с сетью электроснабжения и ливневой канализации. Четвертый этап строительства» расположенный по адресу г. Екатеринбург, пр. Космонавтов,11.",
+      "test_time": "дневное время",
+      "temperature": "-3.5",
+      "wind_speed": "5.5",
+      "project_compliant": false,
+      "project_number": "",
+      "ladders": [],
+      "ladders_compliance": {},
+      "fence_name": "ог1",
+      "length": "2",
+      "height": "2",
+      "mount_points": "2",
+      "mount_pitch": "2",
+      "parapet_height": "2",
+      "damage_found": false,
+      "mount_violation_found": false,
+      "weld_violation_found": false,
+      "paint_compliant": true
+    }
+  },
+  {
+    "timestamp": "2025-11-24T18:17:00.206539",
+    "data": {
+      "protocol_type": "roof",
+      "date": "24.11.2025",
+      "customer": "Общество с ограниченной ответственностью «Новые Строительные Технологии",
+      "object_full_address": "наименование « Жилой микрорайон. Корпус 4.2 с сетями водоснабжения, водоотведения, тепловой сетью, с сетью электроснабжения и ливневой канализации. Четвертый этап строительства» расположенный по адресу г. Екатеринбург, пр. Космонавтов,11.",
+      "test_time": "дневное время",
+      "temperature": "-3.5",
+      "wind_speed": "5.5",
+      "project_compliant": false,
+      "project_number": "",
+      "ladders": [],
+      "ladders_compliance": {},
+      "fence_name": "ог1",
+      "length": "2",
+      "height": "2",
+      "mount_points": "2",
+      "mount_pitch": "2",
+      "parapet_height": "2",
+      "damage_found": false,
+      "mount_violation_found": true,
+      "weld_violation_found": false,
+      "paint_compliant": true
+    }
+  },
+  {
+    "timestamp": "2025-11-24T18:17:06.154036",
+    "data": {
+      "protocol_type": "roof",
+      "date": "24.11.2025",
+      "customer": "Общество с ограниченной ответственностью «Новые Строительные Технологии",
+      "object_full_address": "наименование « Жилой микрорайон. Корпус 4.2 с сетями водоснабжения, водоотведения, тепловой сетью, с сетью электроснабжения и ливневой канализации. Четвертый этап строительства» расположенный по адресу г. Екатеринбург, пр. Космонавтов,11.",
+      "test_time": "дневное время",
+      "temperature": "-3.5",
+      "wind_speed": "5.5",
+      "project_compliant": false,
+      "project_number": "",
+      "ladders": [],
+      "ladders_compliance": {},
+      "fence_name": "ог1",
+      "length": "2",
+      "height": "2",
+      "mount_points": "2",
+      "mount_pitch": "2",
+      "parapet_height": "2",
+      "damage_found": false,
+      "mount_violation_found": false,
+      "weld_violation_found": false,
+      "paint_compliant": false
     }
   }
 ]

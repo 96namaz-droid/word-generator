@@ -7113,3 +7113,251 @@
 2025-11-23 18:01:24 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 5.4 м/с
 2025-11-23 18:01:54 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027CFF9982D0>, 'Connection to wttr.in timed out. (connect timeout=5)'))
 2025-11-23 18:01:55 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 5.4 м/с
+2025-11-23 18:04:01 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027CFF99B250>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 18:04:01 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 5.4 м/с
+2025-11-23 18:04:10 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out.
+2025-11-23 18:04:10 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 5.4 м/с
+2025-11-23 18:04:15 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027CFF998F50>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-23 18:04:16 - WordGenerator - INFO - Погода получена из Open-Meteo: 0.2°C, 5.4 м/с
+2025-11-24 17:59:13 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out.
+2025-11-24 17:59:14 - WordGenerator - INFO - Погода получена из Open-Meteo: -3.5°C, 6.2 м/с
+2025-11-24 18:05:35 - WordGenerator - INFO - === ВАЛИДАЦИЯ ДАННЫХ ===
+2025-11-24 18:05:35 - WordGenerator - INFO - Тип протокола: vertical
+2025-11-24 18:05:35 - WordGenerator - INFO - Валидация вертикальных лестниц: 1 лестниц
+2025-11-24 18:05:35 - WordGenerator - INFO - Вызов DataValidator.validate_all_data...
+2025-11-24 18:05:35 - WordGenerator - INFO - [VALIDATOR] Начало валидации, тип протокола: vertical
+2025-11-24 18:05:35 - WordGenerator - INFO - [VALIDATOR] Проверка даты: '24.11.2025'
+2025-11-24 18:05:35 - WordGenerator - INFO - [VALIDATOR] Проверка заказчика: 'Тестовый заказчик'
+2025-11-24 18:05:35 - WordGenerator - INFO - [VALIDATOR] Проверка адреса: длина=53
+2025-11-24 18:05:35 - WordGenerator - INFO - [VALIDATOR] Валидация протокола типа: vertical
+2025-11-24 18:05:35 - WordGenerator - INFO - [VALIDATOR] Валидация вертикальных лестниц...
+2025-11-24 18:05:35 - WordGenerator - INFO - [VALIDATOR] Ошибок в протоколе: 0
+2025-11-24 18:05:35 - WordGenerator - INFO - [VALIDATOR] Проверка температуры: '20'
+2025-11-24 18:05:35 - WordGenerator - INFO - [VALIDATOR] Проверка скорости ветра: '5'
+2025-11-24 18:05:35 - WordGenerator - INFO - [VALIDATOR] Итог валидации: valid=True, ошибок=0
+2025-11-24 18:05:35 - WordGenerator - INFO - Результат валидации: valid=True, errors=0
+2025-11-24 18:05:37 - WordGenerator - INFO - === ЗАПРОС НА ГЕНЕРАЦИЮ ===
+2025-11-24 18:05:37 - WordGenerator - INFO - Тип протокола: vertical
+2025-11-24 18:05:37 - WordGenerator - INFO - Дата: 24.11.2025
+2025-11-24 18:05:37 - WordGenerator - INFO - Заказчик: Тестовый заказчик
+2025-11-24 18:05:37 - WordGenerator - INFO - Объект: Тестовый адрес объекта для проверки генерации отчетов
+2025-11-24 18:05:37 - WordGenerator - INFO - Обработка вертикальных лестниц...
+2025-11-24 18:05:37 - WordGenerator - INFO - Получено лестниц: 1
+2025-11-24 18:05:37 - WordGenerator - INFO -   Лестница 1: name=Лестница №1, height=10.5, width=0.6
+2025-11-24 18:05:37 - WordGenerator - INFO - Вертикальные лестницы обработаны: 1 лестниц
+2025-11-24 18:05:37 - WordGenerator - INFO - === НАЧАЛО ВАЛИДАЦИИ ===
+2025-11-24 18:05:37 - WordGenerator - INFO - [VALIDATOR] Начало валидации, тип протокола: vertical
+2025-11-24 18:05:37 - WordGenerator - INFO - [VALIDATOR] Проверка даты: '24.11.2025'
+2025-11-24 18:05:37 - WordGenerator - INFO - [VALIDATOR] Проверка заказчика: 'Тестовый заказчик'
+2025-11-24 18:05:37 - WordGenerator - INFO - [VALIDATOR] Проверка адреса: длина=53
+2025-11-24 18:05:37 - WordGenerator - INFO - [VALIDATOR] Валидация протокола типа: vertical
+2025-11-24 18:05:37 - WordGenerator - INFO - [VALIDATOR] Валидация вертикальных лестниц...
+2025-11-24 18:05:37 - WordGenerator - INFO - [VALIDATOR] Ошибок в протоколе: 0
+2025-11-24 18:05:37 - WordGenerator - INFO - [VALIDATOR] Проверка температуры: '20'
+2025-11-24 18:05:37 - WordGenerator - INFO - [VALIDATOR] Проверка скорости ветра: '5'
+2025-11-24 18:05:37 - WordGenerator - INFO - [VALIDATOR] Итог валидации: valid=True, ошибок=0
+2025-11-24 18:05:37 - WordGenerator - INFO - Валидация пройдена успешно ✓
+2025-11-24 18:05:37 - WordGenerator - INFO - === НАЧАЛО ГЕНЕРАЦИИ ДОКУМЕНТА ===
+2025-11-24 18:05:37 - WordGenerator - INFO - Создание DocumentGenerator...
+2025-11-24 18:05:37 - WordGenerator - INFO - Генератор создан, вызов create_document...
+2025-11-24 18:05:37 - WordGenerator - INFO - Передаваемые данные в create_document: protocol_type=vertical
+2025-11-24 18:05:37 - WordGenerator - INFO - === DOCUMENT_GENERATOR.create_document ===
+2025-11-24 18:05:37 - WordGenerator - INFO - Тип протокола: vertical
+2025-11-24 18:05:37 - WordGenerator - INFO - Данные получены: keys=['protocol_type', 'date', 'customer', 'object_full_address', 'test_time', 'temperature', 'wind_speed', 'ladders', 'ladders_compliance', 'ladder_name', 'mount_points', 'marches', 'fence_name', 'length', 'height', 'mount_points_roof', 'mount_pitch', 'parapet_height', 'damage_found', 'mount_violation_found', 'weld_violation_found', 'paint_compliant', 'project_compliant', 'project_number']
+2025-11-24 18:05:37 - WordGenerator - INFO - Создание генератора через Factory...
+2025-11-24 18:05:37 - WordGenerator - INFO - Генератор создан: VerticalLadderGenerator
+2025-11-24 18:05:37 - WordGenerator - INFO - Вызов validate() генератора...
+2025-11-24 18:05:37 - WordGenerator - INFO - [VALIDATOR] Начало валидации, тип протокола: vertical
+2025-11-24 18:05:37 - WordGenerator - INFO - [VALIDATOR] Проверка даты: '24.11.2025'
+2025-11-24 18:05:37 - WordGenerator - INFO - [VALIDATOR] Проверка заказчика: 'Тестовый заказчик'
+2025-11-24 18:05:37 - WordGenerator - INFO - [VALIDATOR] Проверка адреса: длина=53
+2025-11-24 18:05:37 - WordGenerator - INFO - [VALIDATOR] Валидация протокола типа: vertical
+2025-11-24 18:05:37 - WordGenerator - INFO - [VALIDATOR] Валидация вертикальных лестниц...
+2025-11-24 18:05:37 - WordGenerator - INFO - [VALIDATOR] Ошибок в протоколе: 0
+2025-11-24 18:05:37 - WordGenerator - INFO - [VALIDATOR] Проверка температуры: '20'
+2025-11-24 18:05:37 - WordGenerator - INFO - [VALIDATOR] Проверка скорости ветра: '5'
+2025-11-24 18:05:37 - WordGenerator - INFO - [VALIDATOR] Итог валидации: valid=True, ошибок=0
+2025-11-24 18:05:37 - WordGenerator - INFO - Валидация генератора пройдена ✓
+2025-11-24 18:05:37 - WordGenerator - INFO - Вызов generate_doc()...
+2025-11-24 18:05:37 - WordGenerator - INFO - Начало генерации документа для заказчика: Тестовый заказчик
+2025-11-24 18:05:37 - WordGenerator - INFO - Проверка логотипа: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\assets\logo.png, существует: True
+2025-11-24 18:05:37 - WordGenerator - INFO - Логотип успешно добавлен: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\assets\logo.png
+2025-11-24 18:05:37 - WordGenerator - INFO - Данные соответствия лестниц: {}
+2025-11-24 18:05:37 - WordGenerator - INFO - Лестница №1: type=vertical, damages=False, paint_ok=True, compliant=True, has_paint_violation=False
+2025-11-24 18:05:37 - WordGenerator - INFO - Финальный текст вывода: Конструкции вертикальных пожарных лестниц в прочностные испытания выдержали, нагрузка выдерживалась в течение 2 минут. После испытания не имеет трещин, прогибов, изломов. Пригодны к эксплуатации. Соответствует ГОСТ Р 54253-2009 «Техника пожарная. Лестницы пожарные наружные стационарные. Ограждения к...
+2025-11-24 18:05:37 - WordGenerator - INFO - Документ успешно создан: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Protocol_vertical_24-11-2025_18-05-37_Lestnitsa 1.docx
+2025-11-24 18:05:37 - WordGenerator - INFO - === ДОКУМЕНТ УСПЕШНО СОЗДАН ===
+2025-11-24 18:05:37 - WordGenerator - INFO - Путь к файлу: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Protocol_vertical_24-11-2025_18-05-37_Lestnitsa 1.docx
+2025-11-24 18:05:37 - WordGenerator - INFO - Файл существует, размер: 185945 байт
+2025-11-24 18:05:37 - WordGenerator - INFO - ✓ create_document вернул путь: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Protocol_vertical_24-11-2025_18-05-37_Lestnitsa 1.docx
+2025-11-24 18:05:37 - WordGenerator - INFO - Документ успешно создан: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Protocol_vertical_24-11-2025_18-05-37_Lestnitsa 1.docx
+2025-11-24 18:05:37 - WordGenerator - INFO - Размер файла: 185945 байт
+2025-11-24 18:05:37 - WordGenerator - INFO - Имя файла для скачивания: Protocol_vertical_24-11-2025_18-05-37_Lestnitsa 1.docx
+2025-11-24 18:05:37 - WordGenerator - INFO - Попытка отправки отчета на email...
+2025-11-24 18:05:37 - WordGenerator - WARNING - EMAIL_PASSWORD не установлен. Отправка email будет пропущена.
+2025-11-24 18:05:37 - WordGenerator - WARNING - ⚠ Не удалось отправить email: Пароль email не настроен (установите переменную окружения EMAIL_PASSWORD)
+2025-11-24 18:05:37 - WordGenerator - INFO - Content-Disposition: attachment; filename="Protocol_vertical_24-11-2025_18-05-37_Lestnitsa 1.docx"
+2025-11-24 18:06:15 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out. (read timeout=5)
+2025-11-24 18:06:15 - WordGenerator - INFO - Погода получена из Open-Meteo: -3.5°C, 5.8 м/с
+2025-11-24 18:09:42 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEAFF12BA0>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-24 18:09:42 - WordGenerator - INFO - Погода получена из Open-Meteo: -3.5°C, 5.8 м/с
+2025-11-24 18:09:50 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out.
+2025-11-24 18:09:50 - WordGenerator - INFO - Погода получена из Open-Meteo: -3.5°C, 5.8 м/с
+2025-11-24 18:09:58 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out.
+2025-11-24 18:09:58 - WordGenerator - INFO - Погода получена из Open-Meteo: -3.5°C, 5.8 м/с
+2025-11-24 18:16:14 - WordGenerator - INFO - ==================================================
+2025-11-24 18:16:14 - WordGenerator - INFO - Запуск приложения Генератор Word-отчётов
+2025-11-24 18:16:14 - WordGenerator - INFO - ==================================================
+2025-11-24 18:16:15 - WordGenerator - INFO - Добавлен марш+площадка №1
+2025-11-24 18:16:15 - WordGenerator - INFO - Добавлена вертикальная лестница №1
+2025-11-24 18:16:15 - WordGenerator - INFO - Список заказчиков обновлён: 8 записей
+2025-11-24 18:16:15 - WordGenerator - INFO - Автоматическое обновление базы договоров...
+2025-11-24 18:16:16 - WordGenerator - INFO - Распарсен 137 РОСЭК.docx: заказчик: Общество с ограниченной ответственностью «РОСЭК, адрес/наименование: по адресу: Свердловская область, г. Екатеринбург, ул. Толмач...
+2025-11-24 18:16:16 - WordGenerator - INFO - Распарсен 127 ООО НСТ.docx: заказчик: Общество с ограниченной ответственностью «Новые Строительные Технологии, адрес/наименование: наименование « Жилой микрорайон. Корпус 4.2 с сетями водосна...
+2025-11-24 18:16:16 - WordGenerator - INFO - Распарсен 133  Хомидов    исп  ограждений лестн клеток.docx: заказчик: Индивидуальный предприниматель Хомидов Ахмаджон Максудович, адрес/наименование: «Многоэтажный многоквартирный жилой дом со встроенными нежил...
+2025-11-24 18:16:16 - WordGenerator - INFO - Распарсен 136 Системы и сети.docx: заказчик: Общество с ограниченной  ответственностью «СЕТИ И СИСТЕМЫ, адрес/наименование: «Многоэтажные жилые дома в квартале улиц Карла Либкнехта Орд...
+2025-11-24 18:16:16 - WordGenerator - INFO - Обработано файлов: 4, успешно извлечено: 4
+2025-11-24 18:16:16 - WordGenerator - INFO - База договоров сохранена
+2025-11-24 18:16:16 - WordGenerator - INFO - База обновлена, договоров: 4
+2025-11-24 18:16:16 - WordGenerator - INFO - Список заказчиков обновлён: 8 записей
+2025-11-24 18:16:16 - WordGenerator - INFO - База договоров автоматически обновлена: 4 договоров, 4 заказчиков
+2025-11-24 18:16:17 - WordGenerator - INFO - Приложение запущено
+2025-11-24 18:16:21 - WordGenerator - INFO - Выбран заказчик: Общество с ограниченной ответственностью «Новые Строительные Технологии
+2025-11-24 18:16:21 - WordGenerator - INFO - Автозаполнение из 127 ООО НСТ.docx: наименование « Жилой микрорайон. Корпус 4.2 с сетя...
+2025-11-24 18:16:24 - WordGenerator - INFO - Запрос текущей погоды для Екатеринбурга...
+2025-11-24 18:16:29 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3?format=j1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000019795B30EC0>, 'Connection to wttr.in timed out. (connect timeout=5)'))
+2025-11-24 18:16:29 - WordGenerator - INFO - Погода получена из Open-Meteo: -3.5°C, 5.5 м/с
+2025-11-24 18:16:29 - WordGenerator - INFO - Погода успешно обновлена: -3.5°C, 5.5 м/с
+2025-11-24 18:16:53 - WordGenerator - INFO - ===== СБОР ДАННЫХ =====
+2025-11-24 18:16:53 - WordGenerator - INFO - Тип протокола: roof
+2025-11-24 18:16:53 - WordGenerator - INFO - [VALIDATOR] Начало валидации, тип протокола: roof
+2025-11-24 18:16:53 - WordGenerator - INFO - [VALIDATOR] Проверка даты: '24.11.2025'
+2025-11-24 18:16:53 - WordGenerator - INFO - [VALIDATOR] Проверка заказчика: 'Общество с ограниченной ответственностью «Новые Строительные Технологии'
+2025-11-24 18:16:53 - WordGenerator - INFO - [VALIDATOR] Проверка адреса: длина=238
+2025-11-24 18:16:53 - WordGenerator - INFO - [VALIDATOR] Валидация протокола типа: roof
+2025-11-24 18:16:53 - WordGenerator - INFO - [VALIDATOR] Валидация ограждений кровли...
+2025-11-24 18:16:53 - WordGenerator - INFO - [VALIDATOR] Ошибок в протоколе: 0
+2025-11-24 18:16:53 - WordGenerator - INFO - [VALIDATOR] Проверка температуры: '-3.5'
+2025-11-24 18:16:53 - WordGenerator - INFO - [VALIDATOR] Проверка скорости ветра: '5.5'
+2025-11-24 18:16:53 - WordGenerator - INFO - [VALIDATOR] Итог валидации: valid=True, ошибок=0
+2025-11-24 18:16:53 - WordGenerator - INFO - Результат валидации: is_valid=True, errors=[]
+2025-11-24 18:16:53 - WordGenerator - INFO - === DOCUMENT_GENERATOR.create_document ===
+2025-11-24 18:16:53 - WordGenerator - INFO - Тип протокола: roof
+2025-11-24 18:16:53 - WordGenerator - INFO - Данные получены: keys=['protocol_type', 'date', 'customer', 'object_full_address', 'test_time', 'temperature', 'wind_speed', 'project_compliant', 'project_number', 'ladders', 'ladders_compliance', 'fence_name', 'length', 'height', 'mount_points', 'mount_pitch', 'parapet_height', 'damage_found', 'mount_violation_found', 'weld_violation_found', 'paint_compliant']
+2025-11-24 18:16:53 - WordGenerator - INFO - Создание генератора через Factory...
+2025-11-24 18:16:53 - WordGenerator - INFO - Генератор создан: RoofFenceGenerator
+2025-11-24 18:16:53 - WordGenerator - INFO - Вызов validate() генератора...
+2025-11-24 18:16:53 - WordGenerator - INFO - Валидация генератора пройдена ✓
+2025-11-24 18:16:53 - WordGenerator - INFO - Вызов generate_doc()...
+2025-11-24 18:16:53 - WordGenerator - INFO - === ДОКУМЕНТ УСПЕШНО СОЗДАН ===
+2025-11-24 18:16:53 - WordGenerator - INFO - Путь к файлу: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Protocol_roof_24-11-2025_18-16-53_naimenovanie  Zhiloy mikrorayon Korpus 42 s setyam.docx
+2025-11-24 18:16:53 - WordGenerator - INFO - Файл существует, размер: 185892 байт
+2025-11-24 18:16:53 - WordGenerator - INFO - Запись добавлена в историю
+2025-11-24 18:16:53 - WordGenerator - INFO - Список заказчиков обновлён: 8 записей
+2025-11-24 18:17:00 - WordGenerator - INFO - ===== СБОР ДАННЫХ =====
+2025-11-24 18:17:00 - WordGenerator - INFO - Тип протокола: roof
+2025-11-24 18:17:00 - WordGenerator - INFO - [VALIDATOR] Начало валидации, тип протокола: roof
+2025-11-24 18:17:00 - WordGenerator - INFO - [VALIDATOR] Проверка даты: '24.11.2025'
+2025-11-24 18:17:00 - WordGenerator - INFO - [VALIDATOR] Проверка заказчика: 'Общество с ограниченной ответственностью «Новые Строительные Технологии'
+2025-11-24 18:17:00 - WordGenerator - INFO - [VALIDATOR] Проверка адреса: длина=238
+2025-11-24 18:17:00 - WordGenerator - INFO - [VALIDATOR] Валидация протокола типа: roof
+2025-11-24 18:17:00 - WordGenerator - INFO - [VALIDATOR] Валидация ограждений кровли...
+2025-11-24 18:17:00 - WordGenerator - INFO - [VALIDATOR] Ошибок в протоколе: 0
+2025-11-24 18:17:00 - WordGenerator - INFO - [VALIDATOR] Проверка температуры: '-3.5'
+2025-11-24 18:17:00 - WordGenerator - INFO - [VALIDATOR] Проверка скорости ветра: '5.5'
+2025-11-24 18:17:00 - WordGenerator - INFO - [VALIDATOR] Итог валидации: valid=True, ошибок=0
+2025-11-24 18:17:00 - WordGenerator - INFO - Результат валидации: is_valid=True, errors=[]
+2025-11-24 18:17:00 - WordGenerator - INFO - === DOCUMENT_GENERATOR.create_document ===
+2025-11-24 18:17:00 - WordGenerator - INFO - Тип протокола: roof
+2025-11-24 18:17:00 - WordGenerator - INFO - Данные получены: keys=['protocol_type', 'date', 'customer', 'object_full_address', 'test_time', 'temperature', 'wind_speed', 'project_compliant', 'project_number', 'ladders', 'ladders_compliance', 'fence_name', 'length', 'height', 'mount_points', 'mount_pitch', 'parapet_height', 'damage_found', 'mount_violation_found', 'weld_violation_found', 'paint_compliant']
+2025-11-24 18:17:00 - WordGenerator - INFO - Создание генератора через Factory...
+2025-11-24 18:17:00 - WordGenerator - INFO - Генератор создан: RoofFenceGenerator
+2025-11-24 18:17:00 - WordGenerator - INFO - Вызов validate() генератора...
+2025-11-24 18:17:00 - WordGenerator - INFO - Валидация генератора пройдена ✓
+2025-11-24 18:17:00 - WordGenerator - INFO - Вызов generate_doc()...
+2025-11-24 18:17:00 - WordGenerator - INFO - === ДОКУМЕНТ УСПЕШНО СОЗДАН ===
+2025-11-24 18:17:00 - WordGenerator - INFO - Путь к файлу: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Protocol_roof_24-11-2025_18-17-00_naimenovanie  Zhiloy mikrorayon Korpus 42 s setyam.docx
+2025-11-24 18:17:00 - WordGenerator - INFO - Файл существует, размер: 185788 байт
+2025-11-24 18:17:00 - WordGenerator - INFO - Запись добавлена в историю
+2025-11-24 18:17:00 - WordGenerator - INFO - Список заказчиков обновлён: 8 записей
+2025-11-24 18:17:06 - WordGenerator - INFO - ===== СБОР ДАННЫХ =====
+2025-11-24 18:17:06 - WordGenerator - INFO - Тип протокола: roof
+2025-11-24 18:17:06 - WordGenerator - INFO - [VALIDATOR] Начало валидации, тип протокола: roof
+2025-11-24 18:17:06 - WordGenerator - INFO - [VALIDATOR] Проверка даты: '24.11.2025'
+2025-11-24 18:17:06 - WordGenerator - INFO - [VALIDATOR] Проверка заказчика: 'Общество с ограниченной ответственностью «Новые Строительные Технологии'
+2025-11-24 18:17:06 - WordGenerator - INFO - [VALIDATOR] Проверка адреса: длина=238
+2025-11-24 18:17:06 - WordGenerator - INFO - [VALIDATOR] Валидация протокола типа: roof
+2025-11-24 18:17:06 - WordGenerator - INFO - [VALIDATOR] Валидация ограждений кровли...
+2025-11-24 18:17:06 - WordGenerator - INFO - [VALIDATOR] Ошибок в протоколе: 0
+2025-11-24 18:17:06 - WordGenerator - INFO - [VALIDATOR] Проверка температуры: '-3.5'
+2025-11-24 18:17:06 - WordGenerator - INFO - [VALIDATOR] Проверка скорости ветра: '5.5'
+2025-11-24 18:17:06 - WordGenerator - INFO - [VALIDATOR] Итог валидации: valid=True, ошибок=0
+2025-11-24 18:17:06 - WordGenerator - INFO - Результат валидации: is_valid=True, errors=[]
+2025-11-24 18:17:06 - WordGenerator - INFO - === DOCUMENT_GENERATOR.create_document ===
+2025-11-24 18:17:06 - WordGenerator - INFO - Тип протокола: roof
+2025-11-24 18:17:06 - WordGenerator - INFO - Данные получены: keys=['protocol_type', 'date', 'customer', 'object_full_address', 'test_time', 'temperature', 'wind_speed', 'project_compliant', 'project_number', 'ladders', 'ladders_compliance', 'fence_name', 'length', 'height', 'mount_points', 'mount_pitch', 'parapet_height', 'damage_found', 'mount_violation_found', 'weld_violation_found', 'paint_compliant']
+2025-11-24 18:17:06 - WordGenerator - INFO - Создание генератора через Factory...
+2025-11-24 18:17:06 - WordGenerator - INFO - Генератор создан: RoofFenceGenerator
+2025-11-24 18:17:06 - WordGenerator - INFO - Вызов validate() генератора...
+2025-11-24 18:17:06 - WordGenerator - INFO - Валидация генератора пройдена ✓
+2025-11-24 18:17:06 - WordGenerator - INFO - Вызов generate_doc()...
+2025-11-24 18:17:06 - WordGenerator - INFO - === ДОКУМЕНТ УСПЕШНО СОЗДАН ===
+2025-11-24 18:17:06 - WordGenerator - INFO - Путь к файлу: c:\Users\Hammer_1983\PycharmProjects\word_generator\generator\work_data\отчёты\Protocol_roof_24-11-2025_18-17-06_naimenovanie  Zhiloy mikrorayon Korpus 42 s setyam.docx
+2025-11-24 18:17:06 - WordGenerator - INFO - Файл существует, размер: 185925 байт
+2025-11-24 18:17:06 - WordGenerator - INFO - Запись добавлена в историю
+2025-11-24 18:17:06 - WordGenerator - INFO - Список заказчиков обновлён: 8 записей
+2025-11-24 18:17:13 - WordGenerator - INFO - ===== СБОР ДАННЫХ =====
+2025-11-24 18:17:13 - WordGenerator - INFO - Тип протокола: roof
+2025-11-24 18:17:13 - WordGenerator - INFO - [VALIDATOR] Начало валидации, тип протокола: roof
+2025-11-24 18:17:13 - WordGenerator - INFO - [VALIDATOR] Проверка даты: '24.11.2025'
+2025-11-24 18:17:13 - WordGenerator - INFO - [VALIDATOR] Проверка заказчика: 'Общество с ограниченной ответственностью «Новые Строительные Технологии'
+2025-11-24 18:17:13 - WordGenerator - INFO - [VALIDATOR] Проверка адреса: длина=238
+2025-11-24 18:17:13 - WordGenerator - INFO - [VALIDATOR] Валидация протокола типа: roof
+2025-11-24 18:17:13 - WordGenerator - INFO - [VALIDATOR] Валидация ограждений кровли...
+2025-11-24 18:17:13 - WordGenerator - INFO - [VALIDATOR] Ошибок в протоколе: 0
+2025-11-24 18:17:13 - WordGenerator - INFO - [VALIDATOR] Проверка температуры: '-3.5'
+2025-11-24 18:17:13 - WordGenerator - INFO - [VALIDATOR] Проверка скорости ветра: '5.5'
+2025-11-24 18:17:13 - WordGenerator - INFO - [VALIDATOR] Итог валидации: valid=True, ошибок=0
+2025-11-24 18:17:13 - WordGenerator - INFO - Предпросмотр - результат валидации: is_valid=True, errors=[]
+2025-11-24 18:17:17 - WordGenerator - INFO - Приложение завершено
+2025-11-24 18:38:21 - WordGenerator - INFO - ==================================================
+2025-11-24 18:38:21 - WordGenerator - INFO - Запуск приложения Генератор Word-отчётов
+2025-11-24 18:38:21 - WordGenerator - INFO - ==================================================
+2025-11-24 18:38:22 - WordGenerator - INFO - Добавлен марш+площадка №1
+2025-11-24 18:38:22 - WordGenerator - INFO - Добавлена вертикальная лестница №1
+2025-11-24 18:38:22 - WordGenerator - INFO - Список заказчиков обновлён: 8 записей
+2025-11-24 18:38:22 - WordGenerator - INFO - Автоматическое обновление базы договоров...
+2025-11-24 18:38:22 - WordGenerator - INFO - Распарсен 137 РОСЭК.docx: заказчик: Общество с ограниченной ответственностью «РОСЭК, адрес/наименование: по адресу: Свердловская область, г. Екатеринбург, ул. Толмач...
+2025-11-24 18:38:22 - WordGenerator - INFO - Распарсен 127 ООО НСТ.docx: заказчик: Общество с ограниченной ответственностью «Новые Строительные Технологии, адрес/наименование: наименование « Жилой микрорайон. Корпус 4.2 с сетями водосна...
+2025-11-24 18:38:22 - WordGenerator - INFO - Распарсен 133  Хомидов    исп  ограждений лестн клеток.docx: заказчик: Индивидуальный предприниматель Хомидов Ахмаджон Максудович, адрес/наименование: «Многоэтажный многоквартирный жилой дом со встроенными нежил...
+2025-11-24 18:38:22 - WordGenerator - INFO - Распарсен 136 Системы и сети.docx: заказчик: Общество с ограниченной  ответственностью «СЕТИ И СИСТЕМЫ, адрес/наименование: «Многоэтажные жилые дома в квартале улиц Карла Либкнехта Орд...
+2025-11-24 18:38:22 - WordGenerator - INFO - Обработано файлов: 4, успешно извлечено: 4
+2025-11-24 18:38:22 - WordGenerator - INFO - База договоров сохранена
+2025-11-24 18:38:22 - WordGenerator - INFO - База обновлена, договоров: 4
+2025-11-24 18:38:22 - WordGenerator - INFO - Список заказчиков обновлён: 8 записей
+2025-11-24 18:38:22 - WordGenerator - INFO - База договоров автоматически обновлена: 4 договоров, 4 заказчиков
+2025-11-24 18:38:22 - WordGenerator - INFO - Приложение запущено
+2025-11-24 18:38:23 - WordGenerator - INFO - Приложение завершено
+2025-11-24 18:38:47 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out.
+2025-11-24 18:38:48 - WordGenerator - INFO - Погода получена из Open-Meteo: -3.5°C, 4.9 м/с
+2025-11-24 18:38:55 - WordGenerator - WARNING - Ошибка получения погоды из wttr.in: HTTPSConnectionPool(host='wttr.in', port=443): Read timed out.
+2025-11-24 18:38:55 - WordGenerator - INFO - Погода получена из Open-Meteo: -3.5°C, 4.9 м/с
+2025-11-25 06:15:45 - WordGenerator - INFO - ==================================================
+2025-11-25 06:15:45 - WordGenerator - INFO - Запуск приложения Генератор Word-отчётов
+2025-11-25 06:15:45 - WordGenerator - INFO - ==================================================
+2025-11-25 06:15:46 - WordGenerator - INFO - Добавлен марш+площадка №1
+2025-11-25 06:15:46 - WordGenerator - INFO - Добавлена вертикальная лестница №1
+2025-11-25 06:15:46 - WordGenerator - INFO - Список заказчиков обновлён: 8 записей
+2025-11-25 06:15:46 - WordGenerator - INFO - Автоматическое обновление базы договоров...
+2025-11-25 06:15:46 - WordGenerator - INFO - Распарсен 137 РОСЭК.docx: заказчик: Общество с ограниченной ответственностью «РОСЭК, адрес/наименование: по адресу: Свердловская область, г. Екатеринбург, ул. Толмач...
+2025-11-25 06:15:46 - WordGenerator - INFO - Распарсен 127 ООО НСТ.docx: заказчик: Общество с ограниченной ответственностью «Новые Строительные Технологии, адрес/наименование: наименование « Жилой микрорайон. Корпус 4.2 с сетями водосна...
+2025-11-25 06:15:47 - WordGenerator - INFO - Распарсен 133  Хомидов    исп  ограждений лестн клеток.docx: заказчик: Индивидуальный предприниматель Хомидов Ахмаджон Максудович, адрес/наименование: «Многоэтажный многоквартирный жилой дом со встроенными нежил...
+2025-11-25 06:15:47 - WordGenerator - INFO - Распарсен 136 Системы и сети.docx: заказчик: Общество с ограниченной  ответственностью «СЕТИ И СИСТЕМЫ, адрес/наименование: «Многоэтажные жилые дома в квартале улиц Карла Либкнехта Орд...
+2025-11-25 06:15:47 - WordGenerator - INFO - Обработано файлов: 4, успешно извлечено: 4
+2025-11-25 06:15:47 - WordGenerator - INFO - База договоров сохранена
+2025-11-25 06:15:47 - WordGenerator - INFO - База обновлена, договоров: 4
+2025-11-25 06:15:47 - WordGenerator - INFO - Список заказчиков обновлён: 8 записей
+2025-11-25 06:15:47 - WordGenerator - INFO - База договоров автоматически обновлена: 4 договоров, 4 заказчиков
+2025-11-25 06:15:47 - WordGenerator - INFO - Приложение запущено
+2025-11-25 06:15:48 - WordGenerator - INFO - Выбран заказчик: ЗАО 'Альфа-Строй'
+2025-11-25 06:15:50 - WordGenerator - INFO - Приложение завершено

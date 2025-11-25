@@ -10,6 +10,8 @@ from fastapi.exceptions import RequestValidationError
 from pydantic import BaseModel, Field, ValidationError
 from typing import List, Optional, Dict, Any
 import os
+import re
+import unicodedata
 from pathlib import Path
 
 from document_generator import DocumentGenerator
@@ -51,6 +53,29 @@ templates = Jinja2Templates(directory=str(templates_dir))
 contracts_db = ContractsDatabase()
 history_manager = HistoryManager()
 weather_service = WeatherService()
+
+
+def build_download_headers(filename: str) -> tuple[str, str]:
+    """
+    Возвращает ASCII-безопасное имя файла и корректный Content-Disposition.
+
+    FileResponse (Starlette) пишет заголовки в latin-1, поэтому нельзя
+    передавать туда кириллицу напрямую – получим UnicodeEncodeError и ответ 400.
+    """
+    normalized = unicodedata.normalize("NFKD", filename)
+    ascii_name = normalized.encode("ascii", "ignore").decode("ascii")
+    ascii_name = re.sub(r"[^A-Za-z0-9._-]", "_", ascii_name).strip()
+    if not ascii_name:
+        ascii_name = "report.docx"
+    if not ascii_name.lower().endswith(".docx"):
+        ascii_name += ".docx"
+
+    encoded_original = quote(filename, safe="")
+    content_disposition = f'attachment; filename="{ascii_name}"'
+    if encoded_original != ascii_name:
+        content_disposition += f"; filename*=UTF-8''{encoded_original}"
+
+    return ascii_name, content_disposition
 
 # Модели данных
 class LadderData(BaseModel):
@@ -346,26 +371,17 @@ async def generate_report(data: ReportData):
         # Правильное кодирование имени файла для Content-Disposition (RFC 5987)
         # Используем оба формата: старый (для совместимости) и новый (RFC 5987)
         # Для имен с кириллицей используем RFC 5987
-        if any(ord(c) > 127 for c in filename):
-            # Файл содержит не-ASCII символы - используем RFC 5987
-            encoded_filename = quote(filename, safe='')
-            content_disposition = f'attachment; filename="{filename}"; filename*=UTF-8\'\'{encoded_filename}'
-        else:
-            # Только ASCII символы - используем простой формат
-            content_disposition = f'attachment; filename="{filename}"'
-        
+        safe_filename, content_disposition = build_download_headers(filename)
         app_logger.info(f"Content-Disposition: {content_disposition}")
         
-        # Возвращаем файл
-        return FileResponse(
+        response = FileResponse(
             str(file_path_obj),
             media_type="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-            filename=filename,
-            headers={
-                "Content-Disposition": content_disposition,
-                "Content-Type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-            }
+            filename=safe_filename,
         )
+        response.headers["Content-Disposition"] = content_disposition
+        response.headers["Content-Type"] = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        return response
     except HTTPException:
         raise
     except ValueError as e:

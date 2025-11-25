@@ -5,35 +5,86 @@ let currentProtocolType = 'vertical';
 
 // Инициализация
 document.addEventListener('DOMContentLoaded', function() {
-    // Установка текущей даты
-    const today = new Date().toISOString().split('T')[0];
-    document.getElementById('date').value = today;
-    
-    // Обработчик изменения типа протокола
-    document.getElementById('protocolType').addEventListener('change', onProtocolTypeChange);
-    
-    // Обработчик отправки формы
-    document.getElementById('reportForm').addEventListener('submit', handleSubmit);
-    
-    // Обработчик для соответствия проекту
-    document.getElementById('projectCompliant').addEventListener('change', function() {
-        document.getElementById('projectNumber').disabled = !this.checked;
-    });
-    
-    // Обработчик выбора заказчика
-    document.getElementById('customer').addEventListener('change', onCustomerChange);
-    document.getElementById('customer').addEventListener('input', onCustomerInput);
-    
-    // Загрузка списка заказчиков
-    loadCustomers();
-    
-    // Автоматическая загрузка погоды
-    loadWeather();
-    
-    // Инициализация: добавляем первую лестницу для вертикального протокола
-    onProtocolTypeChange();
-    if (currentProtocolType === 'vertical') {
-        addLadder();
+    try {
+        console.log('Инициализация приложения...');
+        
+        // Проверка существования основных элементов
+        const dateInput = document.getElementById('date');
+        const protocolTypeSelect = document.getElementById('protocolType');
+        const reportForm = document.getElementById('reportForm');
+        const projectCompliantCheckbox = document.getElementById('projectCompliant');
+        const projectNumberInput = document.getElementById('projectNumber');
+        const customerInput = document.getElementById('customer');
+        
+        if (!reportForm) {
+            console.error('ОШИБКА: Форма reportForm не найдена!');
+            return;
+        }
+        console.log('✓ Форма reportForm найдена');
+        
+        // Установка текущей даты
+        if (dateInput) {
+            const today = new Date().toISOString().split('T')[0];
+            dateInput.value = today;
+            console.log('✓ Дата установлена:', today);
+        } else {
+            console.warn('Предупреждение: поле date не найдено');
+        }
+        
+        // Обработчик изменения типа протокола
+        if (protocolTypeSelect) {
+            protocolTypeSelect.addEventListener('change', onProtocolTypeChange);
+            console.log('✓ Обработчик изменения типа протокола привязан');
+        } else {
+            console.warn('Предупреждение: select protocolType не найден');
+        }
+        
+        // Обработчик отправки формы - КРИТИЧЕСКИ ВАЖНО
+        reportForm.addEventListener('submit', handleSubmit);
+        console.log('✓ Обработчик submit привязан к форме');
+        
+        // Дополнительная привязка к кнопке на случай, если форма не перехватывается
+        const submitButton = reportForm.querySelector('button[type="submit"]');
+        if (submitButton) {
+            submitButton.addEventListener('click', function(e) {
+                console.log('Кнопка submit нажата');
+                // Не вызываем preventDefault здесь, пусть форма обрабатывается через submit
+            });
+            console.log('✓ Дополнительный обработчик на кнопке привязан');
+        }
+        
+        // Обработчик для соответствия проекту
+        if (projectCompliantCheckbox && projectNumberInput) {
+            projectCompliantCheckbox.addEventListener('change', function() {
+                projectNumberInput.disabled = !this.checked;
+            });
+            console.log('✓ Обработчик соответствия проекту привязан');
+        }
+        
+        // Обработчик выбора заказчика
+        if (customerInput) {
+            customerInput.addEventListener('change', onCustomerChange);
+            customerInput.addEventListener('input', onCustomerInput);
+            console.log('✓ Обработчики заказчика привязаны');
+        }
+        
+        // Загрузка списка заказчиков
+        loadCustomers();
+        
+        // Автоматическая загрузка погоды
+        loadWeather();
+        
+        // Инициализация: добавляем первую лестницу для вертикального протокола
+        onProtocolTypeChange();
+        if (currentProtocolType === 'vertical') {
+            addLadder();
+        }
+        
+        console.log('✓ Инициализация завершена успешно');
+    } catch (error) {
+        console.error('КРИТИЧЕСКАЯ ОШИБКА при инициализации:', error);
+        console.error('Stack trace:', error.stack);
+        alert('Ошибка инициализации приложения. Проверьте консоль браузера (F12) для деталей.');
     }
 });
 
@@ -410,20 +461,48 @@ function collectFormData() {
 
 // Обработка отправки формы
 async function handleSubmit(e) {
+    console.log('=== ОБРАБОТЧИК SUBMIT ВЫЗВАН ===');
+    console.log('Событие:', e);
+    console.log('Target:', e.target);
+    console.log('CurrentTarget:', e.currentTarget);
+    
+    // КРИТИЧЕСКИ ВАЖНО: предотвращаем стандартную отправку формы
     e.preventDefault();
+    e.stopPropagation();
+    console.log('✓ preventDefault() вызван');
     
-    const errorDiv = document.getElementById('errorMessage');
-    const successDiv = document.getElementById('successMessage');
-    errorDiv.style.display = 'none';
-    successDiv.style.display = 'none';
+    // Объявляем переменные в области видимости функции для использования в finally
+    let form, submitBtn, errorDiv, successDiv;
     
-    // Блокируем кнопку
-    const submitBtn = e.target.querySelector('button[type="submit"]');
+    // Получаем форму - может быть e.target или e.currentTarget
+    form = e.target.tagName === 'FORM' ? e.target : e.currentTarget;
+    if (!form || form.tagName !== 'FORM') {
+        console.error('ОШИБКА: Не удалось найти форму!');
+        const formById = document.getElementById('reportForm');
+        if (!formById) {
+            alert('Критическая ошибка: форма не найдена!');
+            return;
+        }
+        form = formById;
+    }
+    console.log('✓ Форма найдена:', form.id);
+    
+    errorDiv = document.getElementById('errorMessage');
+    successDiv = document.getElementById('successMessage');
+    if (errorDiv) errorDiv.style.display = 'none';
+    if (successDiv) successDiv.style.display = 'none';
+    
+    // Блокируем кнопку - ищем в форме
+    submitBtn = form.querySelector('button[type="submit"]');
     if (submitBtn) {
         submitBtn.disabled = true;
         submitBtn.textContent = '⏳ Генерация...';
+        console.log('✓ Кнопка заблокирована');
+    } else {
+        console.warn('Предупреждение: кнопка submit не найдена');
     }
     
+    console.log('=== НАЧАЛО СБОРА ДАННЫХ ===');
     const data = collectFormData();
     console.log('=== СОБРАННЫЕ ДАННЫЕ ===');
     console.log(JSON.stringify(data, null, 2));
@@ -664,9 +743,19 @@ async function handleSubmit(e) {
         errorDiv.innerHTML = '<strong>Ошибка:</strong><br>' + errorMessage.replace(/\n/g, '<br>');
         errorDiv.style.display = 'block';
     } finally {
+        // Разблокируем кнопку - ищем её снова на случай, если переменная не была установлена
+        if (!submitBtn && form) {
+            submitBtn = form.querySelector('button[type="submit"]');
+        }
+        if (!submitBtn) {
+            submitBtn = document.querySelector('#reportForm button[type="submit"]');
+        }
         if (submitBtn) {
             submitBtn.disabled = false;
             submitBtn.textContent = '📄 Сгенерировать отчёт';
+            console.log('✓ Кнопка разблокирована');
+        } else {
+            console.warn('Предупреждение: не удалось найти кнопку для разблокировки');
         }
     }
 }
