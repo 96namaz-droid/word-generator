@@ -40,15 +40,27 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         // Обработчик отправки формы - КРИТИЧЕСКИ ВАЖНО
-        reportForm.addEventListener('submit', handleSubmit);
+        reportForm.addEventListener('submit', function(e) {
+            console.log('Событие submit перехвачено на форме');
+            handleSubmit(e);
+        }, false);
         console.log('✓ Обработчик submit привязан к форме');
         
         // Дополнительная привязка к кнопке на случай, если форма не перехватывается
         const submitButton = reportForm.querySelector('button[type="submit"]');
         if (submitButton) {
             submitButton.addEventListener('click', function(e) {
-                console.log('Кнопка submit нажата');
-                // Не вызываем preventDefault здесь, пусть форма обрабатывается через submit
+                console.log('Кнопка submit нажата (обработчик click)');
+                e.preventDefault();
+                e.stopPropagation();
+                // Создаем фиктивное событие submit и вызываем handleSubmit напрямую
+                const fakeEvent = {
+                    preventDefault: function() {},
+                    stopPropagation: function() {},
+                    target: reportForm,
+                    currentTarget: reportForm
+                };
+                handleSubmit(fakeEvent);
             });
             console.log('✓ Дополнительный обработчик на кнопке привязан');
         }
@@ -166,6 +178,7 @@ function onProtocolTypeChange() {
     // Показываем нужные секции
     if (currentProtocolType === 'vertical') {
         document.getElementById('verticalSection').style.display = 'block';
+        document.getElementById('visualInspectionSection').style.display = 'block';
         document.getElementById('complianceSection').style.display = 'block';
         if (ladderCount === 0) {
             addLadder();
@@ -173,12 +186,14 @@ function onProtocolTypeChange() {
     } else if (currentProtocolType === 'stair') {
         document.getElementById('stairSection').style.display = 'block';
         document.getElementById('visualInspectionSection').style.display = 'block';
+        document.getElementById('complianceSection').style.display = 'block';
         if (marchCount === 0) {
             addMarch();
         }
     } else if (currentProtocolType === 'roof') {
         document.getElementById('roofSection').style.display = 'block';
         document.getElementById('visualInspectionSection').style.display = 'block';
+        document.getElementById('complianceSection').style.display = 'block';
     }
 }
 
@@ -405,10 +420,10 @@ function collectFormData() {
                     fence_height: formData.get(`ladder-${i}-fence_height`) || '',
                     wall_distance: formData.get(`ladder-${i}-wall_distance`) || '',
                     ground_distance: formData.get(`ladder-${i}-ground_distance`) || '',
-                    damage_found: false,
-                    mount_violation_found: false,
-                    weld_violation_found: false,
-                    paint_compliant: true,
+                    damage_found: formData.get('damage_found') === 'on',
+                    mount_violation_found: formData.get('mount_violation_found') === 'on',
+                    weld_violation_found: formData.get('weld_violation_found') === 'on',
+                    paint_compliant: formData.get('paint_compliant') === 'on',
                 });
             }
         }
@@ -443,6 +458,8 @@ function collectFormData() {
         data.mount_violation_found = formData.get('mount_violation_found') === 'on';
         data.weld_violation_found = formData.get('weld_violation_found') === 'on';
         data.paint_compliant = formData.get('paint_compliant') === 'on';
+        data.project_compliant = formData.get('project_compliant') === 'on';
+        data.project_number = formData.get('project_number') || '';
     } else if (currentProtocolType === 'roof') {
         data.fence_name = formData.get('fence_name') || '';
         data.length = formData.get('length') || '';
@@ -454,6 +471,8 @@ function collectFormData() {
         data.mount_violation_found = formData.get('mount_violation_found') === 'on';
         data.weld_violation_found = formData.get('weld_violation_found') === 'on';
         data.paint_compliant = formData.get('paint_compliant') === 'on';
+        data.project_compliant = formData.get('project_compliant') === 'on';
+        data.project_number = formData.get('project_number') || '';
     }
     
     return data;
@@ -467,8 +486,12 @@ async function handleSubmit(e) {
     console.log('CurrentTarget:', e.currentTarget);
     
     // КРИТИЧЕСКИ ВАЖНО: предотвращаем стандартную отправку формы
-    e.preventDefault();
-    e.stopPropagation();
+    if (e && typeof e.preventDefault === 'function') {
+        e.preventDefault();
+    }
+    if (e && typeof e.stopPropagation === 'function') {
+        e.stopPropagation();
+    }
     console.log('✓ preventDefault() вызван');
     
     // Объявляем переменные в области видимости функции для использования в finally
